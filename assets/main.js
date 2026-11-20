@@ -1,8 +1,8 @@
-/* Small, dependency-free behaviours: language switch, mobile menu, copy email. */
+/* Small, dependency-free behaviours: language switch (EN default / FR), theme switch, mobile menu, copy email. */
 (function () {
   "use strict";
 
-  /* ---------- Language switch (EN default, FR / IT) ---------- */
+  /* ---------- Language switch (EN default, FR) ---------- */
   var nodes = document.querySelectorAll("[data-i18n]");
   var original = {};
   nodes.forEach(function (el) {
@@ -11,8 +11,7 @@
   });
   var meta = {
     en: { title: document.title, desc: (document.querySelector('meta[name="description"]') || {}).content },
-    fr: { title: "Laura Pagliaroli · UX Researcher & Product Discovery · Paris", desc: "Laura Pagliaroli, UX Researcher et Product Discovery à Paris. Recherche utilisateur de bout en bout, tests utilisateurs et co-design en français, italien, anglais et espagnol, transformés en décisions produit." },
-    it: { title: "Laura Pagliaroli · UX Researcher & Product Discovery · Parigi", desc: "Laura Pagliaroli, UX Researcher e Product Discovery a Parigi. Ricerca utente end to end, test di usabilità e co-design in francese, italiano, inglese e spagnolo, trasformati in decisioni di prodotto." }
+    fr: { title: "Laura Pagliaroli · UX Researcher & Product Discovery · Paris", desc: "Laura Pagliaroli, UX Researcher et Product Discovery à Paris. Recherche utilisateur de bout en bout, tests utilisateurs et co-design en français, italien, anglais et espagnol, transformés en décisions produit." }
   };
 
   function t(lang, key) {
@@ -21,7 +20,7 @@
   }
 
   function setLang(lang) {
-    if (!/^(en|fr|it)$/.test(lang)) lang = "en";
+    if (!/^(en|fr)$/.test(lang)) lang = "en";
     document.documentElement.lang = lang;
     nodes.forEach(function (el) {
       var k = el.getAttribute("data-i18n");
@@ -86,8 +85,7 @@
   var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
   var THEME_TXT = {
     en: ["Switch to dark mode", "Switch to light mode"],
-    fr: ["Passer en mode sombre", "Passer en mode clair"],
-    it: ["Passa alla modalità scura", "Passa alla modalità chiara"]
+    fr: ["Passer en mode sombre", "Passer en mode clair"]
   };
   function isDark() {
     var t = document.documentElement.getAttribute("data-theme");

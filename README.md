@@ -5,7 +5,7 @@ Site statique (HTML, CSS, JavaScript sans dépendance), prêt pour GitHub Pages.
 ## Structure
 
 ```
-index.html                         Accueil (EN, bouton FR / IT)
+index.html                         Accueil (EN par défaut, bouton FR)
 case-studies/
   picard-product-tiles-loyalty.html   Étude de cas modèle (Picard)
   signalconso-dgccrf.html             SignalConso (contenu repris de Notion)
@@ -14,7 +14,7 @@ case-studies/
   dnum-product-studio.html            DNUM : BROUILLON CACHÉ (voir plus bas)
 assets/
   styles.css      Toutes les couleurs et typos sont des variables en haut du fichier (:root)
-  i18n.js         Traductions FR et IT de l'accueil (l'anglais est dans le HTML)
+  i18n.js         Traduction FR de l'accueil (l'anglais est dans le HTML)
   main.js         Changement de langue, bouton mode clair / sombre (chaque page s'ouvre en clair), menu mobile, copie de l'email
   og-image.png    Image de partage LinkedIn (1200 × 630)
   laura-pagliaroli*.webp              Portrait
