@@ -63,7 +63,7 @@ window.I18N = {
     "c6.i": "Un parcours de réservation testé ; les retours des tests corrigés à l’itération suivante.",
     "ap.eyebrow": "Approche &amp; compétences",
     "ap.title": "De la question de recherche à la décision produit",
-    "ap.intro": "La recherche n’est utile que si elle change ce que l’équipe construit. Je conçois chaque étude à rebours, à partir de la décision qu’elle doit éclairer.",
+    "ap.intro": "La recherche n’est utile que si elle sert ce dont les utilisateurs ont réellement besoin. Je conçois chaque étude à rebours, à partir de la décision qu’elle doit éclairer.",
     "s1.t": "Cadrer", "s1.d": "Aligner la question de recherche sur les KPI métier et la roadmap, avec le Produit et les parties prenantes.",
     "s2.t": "Écouter", "s2.d": "Entretiens, tests utilisateurs, enquêtes et ateliers, menés dans la langue des utilisateurs.",
     "s3.t": "Donner du sens", "s3.d": "Une synthèse structurée en quelques insights priorisés, chacun appuyé par des preuves.",
