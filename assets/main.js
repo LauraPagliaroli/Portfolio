@@ -9,6 +9,11 @@
     var k = el.getAttribute("data-i18n");
     if (!(k in original)) original[k] = el.innerHTML; // English, from the HTML
   });
+  var ariaNodes = document.querySelectorAll("[data-i18n-aria]");
+  ariaNodes.forEach(function (el) {
+    var k = el.getAttribute("data-i18n-aria");
+    if (!(k in original)) original[k] = el.getAttribute("aria-label");
+  });
   var meta = {
     en: { title: document.title, desc: (document.querySelector('meta[name="description"]') || {}).content },
     fr: { title: "Laura Pagliaroli · UX Researcher & Product Discovery · Paris", desc: "Laura Pagliaroli, UX Researcher et Product Discovery à Paris. Recherche utilisateur de bout en bout, tests utilisateurs et co-design en français, italien, anglais et espagnol, transformés en décisions produit." }
@@ -26,6 +31,11 @@
       var k = el.getAttribute("data-i18n");
       var v = t(lang, k);
       if (v != null) el.innerHTML = v;
+    });
+    ariaNodes.forEach(function (el) {
+      var k = el.getAttribute("data-i18n-aria");
+      var v = t(lang, k);
+      if (v != null) el.setAttribute("aria-label", v);
     });
     document.querySelectorAll(".lang-switch button").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
