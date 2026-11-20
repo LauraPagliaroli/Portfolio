@@ -227,8 +227,8 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
    ========================================================================== */
 .hero { position: relative; overflow: hidden; }
 .hero__inner { position: relative; display: grid; gap: 1.75rem; padding-block: clamp(3rem, 8vw, 6rem) clamp(2.5rem, 6vw, 4.5rem); }
-.hero h1 { max-width: 22ch; }
-.accent { color: var(--coral-display); } /* highlighted words, as in the LinkedIn banner */
+.hero h1 { max-width: 22ch; font-weight: 500; }
+.accent { color: var(--coral-display); font-weight: 700; } /* highlighted words, as in the LinkedIn banner */
 .hero__lead { font-size: var(--fs-lead); font-weight: 500; color: var(--ink); max-width: 58ch; }
 .hero__name { font-weight: 700; color: var(--navy); }
 .availability {
