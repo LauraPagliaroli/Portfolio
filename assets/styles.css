@@ -215,7 +215,7 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 /* ==========================================================================
    Seigaiha waves (shared by hero and case study header)
    ========================================================================== */
-.waves { position: absolute; inset: 0 0 auto auto; width: min(62%, 52rem); height: 100%; pointer-events: none; color: var(--wave); opacity: 0.22; }
+.waves { position: absolute; inset: 0 0 auto auto; width: min(62%, 52rem); height: 100%; pointer-events: none; color: var(--wave); opacity: 0.14; }
 .waves svg { width: 100%; height: 100%; }
 .waves { --wave-fill: var(--washi); }
 .contact .waves { --wave-fill: var(--band-bg); }
