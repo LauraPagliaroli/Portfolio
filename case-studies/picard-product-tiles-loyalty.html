@@ -175,33 +175,40 @@
       <h2 id="synthesis-title">Synthesis</h2>
       <p>I clustered observations from every session into an affinity map, then mapped the shopping and loyalty journeys to locate where customers dropped off or hesitated.</p>
 
-      <div class="figure-grid">
-        <figure class="figure">
-          <div class="figure__frame">
-            <!-- [À REMPLACER] Replace with your real export, e.g.
-                 <img src="../assets/picard-affinity-map.webp" alt="…" width="1200" height="800" loading="lazy" decoding="async"> -->
-            <svg viewBox="0 0 400 260" role="img" aria-labelledby="fig1-t">
-              <title id="fig1-t">Placeholder: affinity map with three clusters of sticky notes</title>
-              <rect width="400" height="260" fill="var(--paper)"/>
-              <g font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">
-                <text x="24" y="30">LABELS</text><text x="152" y="30">LOYALTY</text><text x="280" y="30">SEARCH</text>
-              </g>
-              <g fill="var(--coral)" opacity="0.85">
-                <rect x="24" y="44" width="46" height="36" rx="3"/><rect x="76" y="50" width="46" height="36" rx="3"/><rect x="30" y="88" width="46" height="36" rx="3"/><rect x="82" y="94" width="46" height="36" rx="3"/><rect x="40" y="134" width="46" height="36" rx="3"/>
-              </g>
-              <g fill="var(--navy)" opacity="0.75">
-                <rect x="152" y="44" width="46" height="36" rx="3"/><rect x="204" y="52" width="46" height="36" rx="3"/><rect x="158" y="90" width="46" height="36" rx="3"/><rect x="210" y="98" width="46" height="36" rx="3"/>
-              </g>
-              <g fill="var(--line)">
-                <rect x="280" y="44" width="46" height="36" rx="3"/><rect x="332" y="50" width="46" height="36" rx="3"/><rect x="290" y="88" width="46" height="36" rx="3"/>
-              </g>
-              <text x="24" y="232" font-family="Sora, sans-serif" font-size="13" fill="var(--muted)">[À REMPLACER] real affinity map</text>
-            </svg>
-          </div>
-          <figcaption>Affinity map: observations grouped into themes. <span class="todo">export from Miro / FigJam</span></figcaption>
-        </figure>
+      <figure class="figure">
+        <div class="affinity" role="group" aria-label="Affinity map: findings grouped into three themes">
+          <section class="affinity__cluster affinity__cluster--labels" aria-labelledby="af-labels">
+            <h3 id="af-labels" class="label">Product labels</h3>
+            <ul>
+              <li>Labels are not accessible</li>
+              <li>Text and badges are too small</li>
+              <li>Customers confuse Nutri-Score and Eco-Score</li>
+              <li>The PDO label (protected designation of origin) deserves more prominence</li>
+              <li>Product information is hard to read</li>
+              <li>The information hierarchy needs to be reorganised</li>
+            </ul>
+          </section>
+          <section class="affinity__cluster affinity__cluster--loyalty" aria-labelledby="af-loyalty">
+            <h3 id="af-loyalty" class="label">Loyalty</h3>
+            <ul>
+              <li>The points system is not understood</li>
+              <li>Horizontal scrolling is difficult on mobile</li>
+              <li>The last tile of the carousel is barely visible</li>
+            </ul>
+          </section>
+          <section class="affinity__cluster affinity__cluster--search" aria-labelledby="af-search">
+            <h3 id="af-search" class="label">Search</h3>
+            <ul>
+              <li>The filter system is complex</li>
+              <li>The same products appear under several filters</li>
+              <li>No typing suggestions in the search bar</li>
+            </ul>
+          </section>
+        </div>
+        <figcaption>Affinity map: observations from tests, focus groups and workshops grouped into three themes.</figcaption>
+      </figure>
 
-        <figure class="figure">
+      <figure class="figure">
           <div class="figure__frame">
             <svg viewBox="0 0 400 260" role="img" aria-labelledby="fig2-t">
               <title id="fig2-t">Placeholder: loyalty journey with five steps and a satisfaction curve that drops at step three</title>
@@ -218,7 +225,6 @@
           </div>
           <figcaption>Loyalty journey: the biggest drop in confidence. <span class="todo">replace steps and pain point with the real map</span></figcaption>
         </figure>
-      </div>
 
       <h3>What customers said</h3>
       <ul class="verbatims">
@@ -232,28 +238,28 @@
     <section class="cs-section" id="insights" aria-labelledby="insights-title">
       <p class="label">04 · Key insights</p>
       <h2 id="insights-title">Key insights</h2>
-      <p>Each insight is linked to the decision it triggered and what changed, so the chain from evidence to product is visible.</p>
+      <p>Each insight comes from the affinity map above and is linked to the decision it triggered and what changed, so the chain from evidence to product is visible.</p>
       <ol class="insights">
         <li class="insight">
           <span class="insight__id" aria-hidden="true">I-01</span>
           <div class="insight__body">
-            <h3><span class="visually-hidden">Insight 1: </span>Key product information was not readable at a glance</h3>
-            <p><span class="todo">Describe what you observed, e.g. how many participants missed or misread the Nutri-Score and Eco-Score on tiles, and why.</span></p>
+            <h3><span class="visually-hidden">Insight 1: </span>Product labels were hard to read and easy to confuse</h3>
+            <p>Labels were not accessible and too small. Customers mixed up the Nutri-Score and the Eco-Score, the PDO label went unnoticed, and the information hierarchy on the tiles made key details hard to find.</p>
             <dl class="chain">
-              <div><dt>Evidence</dt><dd><span class="todo">x of 25 participants</span></dd></div>
-              <div><dt>Decision</dt><dd>Redesign product tiles to surface key information more clearly.</dd></div>
-              <div><dt>Result</dt><dd>New tiles shipped with clearer Nutri-Score and Eco-Score.</dd></div>
+              <div><dt>Evidence</dt><dd>Usability tests · <span class="todo">x of 25 participants</span></dd></div>
+              <div><dt>Decision</dt><dd>Redesign the product tiles: reorganise the information hierarchy, enlarge and clearly separate the Nutri-Score and Eco-Score, and highlight the PDO label.</dd></div>
+              <div><dt>Result</dt><dd>New tiles shipped with key product information shown more clearly.</dd></div>
             </dl>
           </div>
         </li>
         <li class="insight">
           <span class="insight__id" aria-hidden="true">I-02</span>
           <div class="insight__body">
-            <h3><span class="visually-hidden">Insight 2: </span>Customers did not understand what the loyalty programme gave them</h3>
-            <p><span class="todo">Describe the misunderstanding observed in tests and focus groups.</span></p>
+            <h3><span class="visually-hidden">Insight 2: </span>The loyalty programme was not understood</h3>
+            <p>Customers did not understand how the points system worked. On mobile, horizontal scrolling was difficult and the last tile of the carousel was barely visible, so part of the content was missed.</p>
             <dl class="chain">
-              <div><dt>Evidence</dt><dd><span class="todo">focus groups + tests</span></dd></div>
-              <div><dt>Decision</dt><dd>Prioritise the loyalty journey on the roadmap and redesign the loyalty page.</dd></div>
+              <div><dt>Evidence</dt><dd>Focus groups + usability tests</dd></div>
+              <div><dt>Decision</dt><dd>Prioritise the loyalty journey on the roadmap and redesign the loyalty page, explaining points simply and making the carousel easier to browse.</dd></div>
               <div><dt>Result</dt><dd>New loyalty page live in the app.</dd></div>
             </dl>
           </div>
@@ -261,7 +267,19 @@
         <li class="insight">
           <span class="insight__id" aria-hidden="true">I-03</span>
           <div class="insight__body">
-            <h3><span class="visually-hidden">Insight 3: </span>One-off studies were not enough to keep pace with sprints</h3>
+            <h3><span class="visually-hidden">Insight 3: </span>Search and filters slowed customers down</h3>
+            <p>The filter system was complex, the same products appeared under several filters, and the search bar offered no typing suggestions.</p>
+            <dl class="chain">
+              <div><dt>Evidence</dt><dd>Usability tests · <span class="todo">x of 25 participants</span></dd></div>
+              <div><dt>Decision</dt><dd><span class="todo">Decision taken, e.g. simplify the filter structure and add search suggestions</span></dd></div>
+              <div><dt>Result</dt><dd><span class="todo">Result or roadmap status</span></dd></div>
+            </dl>
+          </div>
+        </li>
+        <li class="insight">
+          <span class="insight__id" aria-hidden="true">I-04</span>
+          <div class="insight__body">
+            <h3><span class="visually-hidden">Insight 4: </span>One-off studies were not enough to keep pace with sprints</h3>
             <p>Teams needed user feedback at the speed of delivery, not only at the end of a study.</p>
             <dl class="chain">
               <div><dt>Evidence</dt><dd>Requests from Product and tech during the migration</dd></div>
