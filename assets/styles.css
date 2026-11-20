@@ -570,7 +570,7 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 
 /* ---- Case study panels: light distinction between sections ---- */
 .cs-panel { border: 1px solid var(--line); border-radius: calc(var(--radius) * 2); padding: clamp(1.5rem, 3.5vw, 2.5rem); scroll-margin-top: 6rem; }
-.cs-panel--method, .cs-panel--insights, .cs-panel--learned { background: var(--sand); border-color: transparent; }
+.cs-panel--alt { background: var(--sand); border-color: transparent; }
 .cs-body:has(.cs-panel) { gap: clamp(1.75rem, 3.5vw, 2.5rem); }
 .cs-kicker { display: inline-flex; align-items: center; gap: 0.5rem; width: fit-content; margin: 0; padding: 0.3rem 0.8rem; border-radius: 999px;
   font-family: var(--font-mono); font-size: var(--fs-label); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500;

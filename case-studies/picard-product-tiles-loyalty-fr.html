@@ -104,11 +104,11 @@
 <p class="label">Sur cette page</p>
 <ol>
 <li><a href="#tldr">Cadrage</a></li>
-<li><a href="#context">Contexte et question</a></li>
-<li><a href="#approach">Approche</a></li>
-<li><a href="#synthesis">Synthèse</a></li>
+<li><a href="#context">Contexte</a></li>
+<li><a href="#approach">Méthode</a></li>
+<li><a href="#synthesis">Données</a></li>
 <li><a href="#insights">Insights clés</a></li>
-<li><a href="#impact">Recommandations et impact</a></li>
+<li><a href="#impact">Impact</a></li>
 <li><a href="#learned">Ce que j’ai appris</a></li>
 </ol>
 </nav>
@@ -125,8 +125,8 @@
 </div>
 </section>
 <!-- CONTEXT -->
-<section aria-labelledby="context-title" class="cs-section" id="context">
-<p class="label">01 · Contexte</p>
+<section aria-labelledby="context-title" class="cs-section cs-panel" id="context">
+<p class="cs-kicker"><span aria-hidden="true">01</span> Contexte</p>
 <h2 id="context-title">Contexte et question de recherche</h2>
 <p>Picard est le leader français du surgelé, avec plus de 1 200 magasins et 12 millions de clients. La recherche était au cœur d’un programme de transformation digitale et de migration Salesforce couvrant le site et l’app mobile, où les équipes web et mobile devaient décider quoi améliorer en priorité.</p>
 <p class="question">Comment les clients choisissent-ils leurs produits et comprennent-ils le programme de fidélité en ligne, et quels changements les aideraient le plus ?</p>
@@ -138,8 +138,8 @@
 </ul>
 </section>
 <!-- APPROACH -->
-<section aria-labelledby="approach-title" class="cs-section" id="approach">
-<p class="label">02 · Approche</p>
+<section aria-labelledby="approach-title" class="cs-section cs-panel cs-panel--alt" id="approach">
+<p class="cs-kicker"><span aria-hidden="true">02</span> Méthode</p>
 <h2 id="approach-title">Approche et méthodologie</h2>
 <ul aria-label="Protocole de recherche" class="protocol">
 <li><strong>25</strong><span>tests utilisateurs modérés</span></li>
@@ -159,16 +159,11 @@
 </tbody>
 </table>
 </div>
-<h3>Recrutement et contraintes</h3>
-<ul>
-<li><span class="todo">Canal et critères de recrutement (adhérents fidélité ou non, utilisateurs app ou web, âge, fréquence).</span></li>
-<li>La recherche se déroulait en parallèle d’une migration Salesforce : les résultats devaient s’intégrer au planning des sprints sans ralentir les livraisons.</li>
-<li><span class="todo">Autres contraintes : calendrier, budget, accès aux clients, juridique (consentement RGPD).</span></li>
-</ul>
+<p><strong>Contrainte :</strong> la recherche s'est déroulée en parallèle d'une migration Salesforce, les résultats devaient donc s'intégrer au planning des sprints sans ralentir les livraisons.</p>
 </section>
 <!-- SYNTHESIS -->
-<section aria-labelledby="synthesis-title" class="cs-section" id="synthesis">
-<p class="label">03 · Synthèse</p>
+<section aria-labelledby="synthesis-title" class="cs-section cs-panel" id="synthesis">
+<p class="cs-kicker"><span aria-hidden="true">03</span> Données</p>
 <h2 id="synthesis-title">Synthèse</h2>
 <p>J’ai regroupé les observations de chaque session dans une carte d’affinité, puis cartographié les parcours d’achat et de fidélité pour repérer où les clients abandonnaient ou hésitaient.</p>
 <figure class="figure">
@@ -228,10 +223,9 @@
 </ul>
 </section>
 <!-- INSIGHTS -->
-<section aria-labelledby="insights-title" class="cs-section" id="insights">
-<p class="label">04 · Insights clés</p>
+<section aria-labelledby="insights-title" class="cs-section cs-panel cs-panel--alt" id="insights">
+<p class="cs-kicker"><span aria-hidden="true">04</span> Insights clés</p>
 <h2 id="insights-title">Insights clés</h2>
-<p>Chaque insight vient de la carte d’affinité ci-dessus et est relié à la décision qu’il a déclenchée et à ce qui a changé : la chaîne entre la preuve et le produit est visible.</p>
 <ol class="insights">
 <li class="insight">
 <span aria-hidden="true" class="insight__id">I-01</span>
@@ -284,8 +278,8 @@
 </ol>
 </section>
 <!-- IMPACT -->
-<section aria-labelledby="impact-title" class="cs-section" id="impact">
-<p class="label">05 · Impact</p>
+<section aria-labelledby="impact-title" class="cs-section cs-panel" id="impact">
+<p class="cs-kicker"><span aria-hidden="true">05</span> Impact</p>
 <h2 id="impact-title">Recommandations et impact</h2>
 <h3>Décisions prises</h3>
 <ul>
@@ -303,13 +297,13 @@
 </ul>
 </section>
 <!-- LEARNED -->
-<section aria-labelledby="learned-title" class="cs-section" id="learned">
-<p class="label">06 · Rétrospective</p>
+<section aria-labelledby="learned-title" class="cs-section cs-panel cs-panel--alt" id="learned">
+<p class="cs-kicker"><span aria-hidden="true">06</span> Rétrospective</p>
 <h2 id="learned-title">Ce que j’ai appris et ce que je ferais autrement</h2>
 <ul>
 <li>Les ateliers de co-design avec les équipes tech et métier ont accéléré l’adoption des recommandations, parce qu’elles les avaient construites.</li>
-<li><span class="todo">Ce que tu ferais autrement, par ex. mesurer une base de référence avant la refonte pour montrer plus clairement l’avant / après.</span></li>
-<li><span class="todo">Une deuxième leçon, par ex. impliquer plus tôt les équipes magasin pour relier parcours en ligne et en magasin.</span></li>
+<li><strong>Ce que je ferais différemment :</strong> mesurer une base de référence avant la refonte, pour montrer l'impact des nouvelles tuiles et de la page fidélité avec des indicateurs avant / après clairs.</li>
+<li>Impliquer plus tôt les équipes magasin aurait relié parcours en ligne et en magasin : beaucoup de questions sur la fidélité naissent en caisse, pas dans l'app.</li>
 </ul>
 <p class="note"><strong>Confidentialité.</strong> Certaines données, écrans et verbatims ont été anonymisés ou simplifiés pour protéger Picard et ses clients. Les chiffres présentés sont ceux que je suis autorisée à partager.</p>
 </section>
