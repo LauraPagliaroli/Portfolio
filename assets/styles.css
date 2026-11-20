@@ -29,7 +29,7 @@
   --placeholder-bg: #FFE3DF;
 
   /* ---- Typography ---- */
-  --font-name: "Caveat", "Segoe Print", "Bradley Hand", cursive;           /* your name */
+  --font-name: "Sora", "Segoe UI", system-ui, sans-serif;     /* your name (extra bold) */
   --font-display: "Sora", "Segoe UI", system-ui, sans-serif;  /* headings */
   --font-body: "Sora", "Segoe UI", system-ui, sans-serif;     /* running text */
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -143,7 +143,7 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 }
 .site-header__inner { display: flex; align-items: center; gap: 1.25rem; min-height: 4.5rem; }
 .brand {
-  font-family: var(--font-name); font-weight: 700; font-size: 2.5rem; line-height: 1;
+  font-family: var(--font-name); font-weight: 800; font-size: 1.75rem; line-height: 1; letter-spacing: -0.015em;
   color: var(--navy); text-decoration: none; white-space: nowrap; margin-right: auto;
 }
 .nav { display: flex; align-items: center; gap: 0.25rem; }
@@ -208,7 +208,7 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 }
 @media (max-width: 520px) {
   .site-header__inner { flex-wrap: wrap; gap: 0.5rem 0.75rem; padding-block: 0.6rem; }
-  .brand { font-size: 2.1rem; }
+  .brand { font-size: 1.5rem; }
   .header-actions { width: 100%; justify-content: space-between; order: 3; }
 }
 

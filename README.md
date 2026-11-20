@@ -48,7 +48,7 @@ Pour la publier :
 
 Ouvre `assets/styles.css` : le bloc `:root` en haut définit `--washi` (fond), `--navy` (couleur primaire),
 `--coral` (secondaire), etc. Le mode sombre est redéfini juste en dessous.
-Typos : Sora pour les titres et le texte, Caveat pour le nom, IBM Plex Mono pour les étiquettes.
+Typos : Sora pour tout le site (nom en extra bold 800, titres en bold 700), IBM Plex Mono pour les étiquettes.
 
 ## Mise en ligne sur GitHub Pages
 
