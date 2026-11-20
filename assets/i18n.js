@@ -120,6 +120,7 @@ window.I18N = {
     "aria.4": "Navigation principale",
     "aria.5": "Méthodes",
     "aria.6": "Langues de recherche",
+    "aria.top": "Revenir en haut",
     "ab.eyebrow": "À propos",
     "ab.title": "Recherche et produit, en quatre langues",
     "ab.p1": "Titulaire d’un Master Manager/Designer de produits et services numériques des Gobelins, j’ai plus de 13 ans d’expérience en environnement international et grands comptes. Je travaille à la croisée de l’UX Research et de la Product Discovery : audits, entretiens, tests et ateliers, puis des recommandations priorisées qui s’intègrent à la roadmap.",

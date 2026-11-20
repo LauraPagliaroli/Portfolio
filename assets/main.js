@@ -130,6 +130,21 @@
     new MutationObserver(syncThemeBtn).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
   }
 
+  /* ---------- Back to top ---------- */
+  var toTop = document.getElementById("to-top");
+  if (toTop) {
+    var onScroll = function () { toTop.classList.toggle("is-visible", window.scrollY > 600); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    toTop.addEventListener("click", function (e) {
+      e.preventDefault();
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+      var brand = document.querySelector(".brand");
+      if (brand) brand.focus({ preventScroll: true });
+    });
+  }
+
   /* ---------- Footer year ---------- */
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
