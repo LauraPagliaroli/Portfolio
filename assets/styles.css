@@ -474,6 +474,9 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 .method-table th, .method-table td { text-align: left; padding: 0.8rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
 .method-table th { font-family: var(--font-mono); font-size: var(--fs-label); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 500; background: var(--sand); }
 .method-table td:first-child { font-weight: 600; color: var(--navy); white-space: nowrap; }
+.method-table th { white-space: nowrap; }
+.method-table th:first-child, .method-table td:first-child { padding-left: 1.25rem; }
+.method-table th:last-child, .method-table td:last-child { padding-right: 1.25rem; }
 
 .figure { margin: 0; display: grid; gap: 0.6rem; }
 .figure__frame { border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); overflow: hidden; }
