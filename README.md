@@ -6,7 +6,7 @@ Site statique (HTML, CSS, JavaScript sans dépendance), prêt pour GitHub Pages.
 
 ```
 index.html                         Accueil (EN par défaut, bouton FR)
-case-studies/
+case-studies/                       Chaque étude existe en anglais (slug.html) et en français (slug-fr.html)
   picard-product-tiles-loyalty.html   Étude de cas modèle (Picard)
   signalconso-dgccrf.html             SignalConso (contenu repris de Notion)
   savoirsphere-teacher-app.html       SavoirSphère (Notion)
@@ -57,3 +57,9 @@ Typos : Sora pour tout le site (nom en extra bold 800, titres en bold 700), IBM 
 3. Settings > Pages > Source : « Deploy from a branch », branche `main`, dossier `/ (root)`.
 4. Le site est en ligne à `https://ton-nom-utilisateur.github.io/` après une ou deux minutes.
 5. Déclare l'adresse dans Google Search Console et soumets `sitemap.xml`.
+
+## Versions françaises des études de cas
+
+Les pages `*-fr.html` sont générées à partir des pages anglaises (script `make_fr.py` et dictionnaire
+`fr.json`, conservés hors du site). Si tu modifies une page anglaise, modifie aussi sa version `-fr`.
+Le sélecteur EN/FR est présent sur toutes les pages, et la langue choisie est retenue d'une page à l'autre.

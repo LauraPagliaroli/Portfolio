@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- Site address: https://laurapagliaroli.github.io/Portfolio/ -->
+<title>Étude de cas Picard · Tuiles produit et fidélité · Laura Pagliaroli, UX Researcher</title>
+<meta content="Étude de cas UX Research pour Picard (12 M de clients) : 25 tests utilisateurs, 4 focus groups et 10 ateliers de co-design qui ont mené à de nouvelles tuiles produit, une nouvelle page fidélité dans l’app et une roadmap guidée par la recherche." name="description"/>
+<meta content="Laura Pagliaroli" name="author"/>
+<link href="https://laurapagliaroli.github.io/Portfolio/case-studies/picard-product-tiles-loyalty-fr.html" rel="canonical"/>
+<link href="https://laurapagliaroli.github.io/Portfolio/case-studies/picard-product-tiles-loyalty.html" hreflang="en" rel="alternate"/>
+<link href="https://laurapagliaroli.github.io/Portfolio/case-studies/picard-product-tiles-loyalty-fr.html" hreflang="fr" rel="alternate"/>
+<link href="https://laurapagliaroli.github.io/Portfolio/case-studies/picard-product-tiles-loyalty.html" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="Laura Pagliaroli · UX Research" property="og:site_name"/>
+<meta content="Picard : une recherche qui a transformé les tuiles produit et le parcours fidélité" property="og:title"/>
+<meta content="25 tests utilisateurs, 4 focus groups, 10 ateliers de co-design, et les décisions produit qui en ont découlé. Une étude de cas UX Research de Laura Pagliaroli." property="og:description"/>
+<meta content="https://laurapagliaroli.github.io/Portfolio/case-studies/picard-product-tiles-loyalty-fr.html" property="og:url"/>
+<meta content="https://laurapagliaroli.github.io/Portfolio/assets/og-image.png" property="og:image"/>
+<meta content="Laura Pagliaroli, UX Researcher. Étude de cas Picard." property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Picard: clearer product information and loyalty journey for 12M customers",
+  "about": ["UX Research", "Usability testing", "Focus groups", "Co-design", "Continuous discovery", "Retail e-commerce"],
+  "author": { "@type": "Person", "name": "Laura Pagliaroli", "jobTitle": "UX Researcher · Product Discovery", "url": "https://laurapagliaroli.github.io/Portfolio/" },
+  "inLanguage": "fr"
+}
+</script>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23FF5E4D'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%2302234E' font-family='sans-serif'%3E%E8%A6%B3%3C/text%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Sora:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script>/* every page opens in light mode */document.documentElement.setAttribute("data-theme","light")</script>
+<script>try{localStorage.setItem("lp-lang","fr")}catch(e){}</script>
+<link href="../assets/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="site-header" id="top">
+<div class="container site-header__inner">
+<a aria-label="Laura Pagliaroli, accueil" class="brand" href="../index.html">Laura Pagliaroli</a>
+<button aria-controls="site-nav" aria-expanded="false" class="menu-toggle" id="menu-toggle" type="button">Menu</button>
+<nav aria-label="Navigation principale" class="nav" id="site-nav">
+<a href="../index.html#about">À propos</a>
+<a href="../index.html#approach">Approche</a>
+<a aria-current="true" href="../index.html#work">Études de cas</a>
+<a href="../index.html#contact">Contact</a>
+</nav>
+<div class="header-actions">
+<button aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button">
+<svg aria-hidden="true" class="icon-moon" focusable="false" viewbox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+<svg aria-hidden="true" class="icon-sun" focusable="false" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="4.2" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>
+<span class="visually-hidden" id="theme-toggle-label">Passer en mode sombre</span>
+</button><div aria-label="Langue" class="lang-switch" role="group"><a href="picard-product-tiles-loyalty.html" hreflang="en" lang="en"><span aria-hidden="true">EN</span><span class="visually-hidden">English</span></a><a aria-current="true" href="picard-product-tiles-loyalty-fr.html" hreflang="fr" lang="fr"><span aria-hidden="true">FR</span><span class="visually-hidden">Français</span></a></div>
+
+<a class="btn btn--primary btn--small" href="../assets/Laura_Pagliaroli_CV_UX_Researcher_EN.pdf">CV (PDF)</a>
+</div>
+</div>
+</header>
+<main id="main">
+<!-- ================= CASE HEADER ================= -->
+<section aria-labelledby="cs-title" class="cs-hero">
+<div aria-hidden="true" class="waves">
+<svg focusable="false" preserveaspectratio="xMaxYMin slice" viewbox="0 0 800 520">
+<defs>
+<pattern height="24" id="sg-cs" patternunits="userSpaceOnUse" width="48">
+<g class="scale">
+<circle cx="0" cy="12" r="23"></circle><circle cx="0" cy="12" r="17"></circle><circle cx="0" cy="12" r="11"></circle><circle cx="0" cy="12" r="5"></circle>
+<circle cx="48" cy="12" r="23"></circle><circle cx="48" cy="12" r="17"></circle><circle cx="48" cy="12" r="11"></circle><circle cx="48" cy="12" r="5"></circle>
+<circle cx="24" cy="24" r="23"></circle><circle cx="24" cy="24" r="17"></circle><circle cx="24" cy="24" r="11"></circle><circle cx="24" cy="24" r="5"></circle>
+</g>
+</pattern>
+<lineargradient id="fade-cs" x1="1" x2="0" y1="0" y2="0.3">
+<stop offset="0" stop-color="#fff"></stop><stop offset="0.35" stop-color="#fff" stop-opacity="0.7"></stop><stop offset="0.8" stop-color="#fff" stop-opacity="0"></stop>
+</lineargradient>
+<mask id="m-cs"><rect fill="url(#fade-cs)" height="520" width="800"></rect></mask>
+</defs>
+<rect fill="url(#sg-cs)" height="520" mask="url(#m-cs)" width="800"></rect>
+</svg>
+</div>
+<div class="container cs-hero__inner">
+<nav aria-label="Fil d’Ariane" class="breadcrumb">
+<ol><li><a href="../index.html">Accueil</a></li><li><a href="../index.html#work">Études de cas</a></li><li aria-current="page">Picard</li></ol>
+</nav>
+<p class="label label--coral">Étude de cas · Retail · Web &amp; app mobile</p>
+<h1 id="cs-title">Picard : une information produit plus claire et un parcours fidélité vraiment utilisé</h1>
+<dl class="facts">
+<div><dt>Entreprise</dt><dd>Picard Surgelés · plus de 1 200 magasins, 12 M de clients</dd></div>
+<div><dt>Mon rôle</dt><dd>CX Designer &amp; UX Researcher, responsable de la recherche</dd></div>
+<div><dt>Durée</dt><dd>Oct. 2024 – sept. 2025 · 1 an</dd></div>
+<div><dt>Équipe</dt><dd>Produit, métier, tech et design (programme de migration Salesforce) · <span class="todo">taille de l’équipe</span></dd></div>
+</dl>
+<ul aria-label="Méthodes utilisées" class="tags">
+<li>Tests utilisateurs · n = 25</li><li>Focus groups · 4</li><li>Ateliers de co-design · 10</li><li>Discovery continue</li><li>Affinity mapping</li><li>Cartographie de parcours</li>
+</ul>
+</div>
+</section>
+<div class="container cs-layout">
+<nav aria-label="Sur cette page" class="toc">
+<p class="label">Sur cette page</p>
+<ol>
+<li><a href="#tldr">TL;DR</a></li>
+<li><a href="#context">Contexte et question</a></li>
+<li><a href="#approach">Approche</a></li>
+<li><a href="#synthesis">Synthèse</a></li>
+<li><a href="#insights">Insights clés</a></li>
+<li><a href="#impact">Recommandations et impact</a></li>
+<li><a href="#learned">Ce que j’ai appris</a></li>
+</ol>
+</nav>
+<article class="cs-body">
+<!-- TL;DR -->
+<section aria-labelledby="tldr-title" class="cs-section" id="tldr">
+<div class="tldr-box">
+<h2 class="label" id="tldr-title">TL;DR</h2>
+<ol>
+<li><b>Problème</b><span>Les clients avaient du mal à trouver et à lire les informations produit clés (Nutri-Score, Eco-Score) et ne voyaient pas l’intérêt du programme de fidélité en ligne.</span></li>
+<li><b>Ce que j’ai fait</b><span>Cadrage, recrutement et animation de 25 tests utilisateurs, 4 focus groups et 10 ateliers de co-design, puis mise en place d’un processus qui alimente chaque sprint en retours utilisateurs.</span></li>
+<li><b>Impact</b><span>Tuiles produit refondues, page fidélité repensée et en ligne dans l’app, et recherche utilisée pour prioriser la roadmap web et mobile.</span></li>
+</ol>
+</div>
+</section>
+<!-- CONTEXT -->
+<section aria-labelledby="context-title" class="cs-section" id="context">
+<p class="label">01 · Contexte</p>
+<h2 id="context-title">Contexte et question de recherche</h2>
+<p>Picard est le leader français du surgelé, avec plus de 1 200 magasins et 12 millions de clients. La recherche était au cœur d’un programme de transformation digitale et de migration Salesforce couvrant le site et l’app mobile, où les équipes web et mobile devaient décider quoi améliorer en priorité.</p>
+<p class="question">Comment les clients choisissent-ils leurs produits et comprennent-ils le programme de fidélité en ligne, et quels changements les aideraient le plus ?</p>
+<h3>Objectifs business</h3>
+<ul>
+<li>Rendre les informations nutritionnelles et environnementales lisibles en un coup d’œil sur les tuiles produit.</li>
+<li>Améliorer la compréhension et l’usage du programme de fidélité dans l’app. <span class="todo">KPI cible</span></li>
+<li>Donner au Produit un moyen fondé sur les utilisateurs pour prioriser la roadmap web et mobile.</li>
+</ul>
+</section>
+<!-- APPROACH -->
+<section aria-labelledby="approach-title" class="cs-section" id="approach">
+<p class="label">02 · Approche</p>
+<h2 id="approach-title">Approche et méthodologie</h2>
+<ul aria-label="Protocole de recherche" class="protocol">
+<li><strong>25</strong><span>tests utilisateurs modérés</span></li>
+<li><strong>4</strong><span>focus groups</span></li>
+<li><strong>10</strong><span>ateliers de co-design</span></li>
+<li><strong>2</strong><span>plateformes : web et app mobile</span></li>
+</ul>
+<p>J’ai combiné les méthodes pour que chacune réponde à une partie de la question : les tests montraient ce que les gens font réellement, les focus groups expliquaient pourquoi, et les ateliers transformaient les problèmes en solutions avec ceux qui allaient les construire.</p>
+<div aria-label="Méthodes et justification, tableau défilant" class="method-table-wrap" role="region" tabindex="0">
+<table class="method-table">
+<caption class="visually-hidden">Méthodes, raisons de leur choix et échantillon</caption>
+<thead><tr><th scope="col">Méthode</th><th scope="col">Pourquoi cette méthode</th><th scope="col">Échantillon</th></tr></thead>
+<tbody>
+<tr><td>Tests utilisateurs</td><td>Observer les comportements réels sur les tuiles produit et le parcours fidélité, tâche par tâche.</td><td>n = 25 · <span class="todo">répartition des profils</span></td></tr>
+<tr><td>Focus groups</td><td>Comprendre les attentes et perceptions autour des labels nutritionnels et des avantages fidélité.</td><td>4 groupes · <span class="todo">participants par groupe</span></td></tr>
+<tr><td>Ateliers de co-design</td><td>Prioriser et esquisser des solutions avec le Produit, le métier, la tech et le design.</td><td>10 ateliers · <span class="todo">qui a participé</span></td></tr>
+</tbody>
+</table>
+</div>
+<h3>Recrutement et contraintes</h3>
+<ul>
+<li><span class="todo">Canal et critères de recrutement (adhérents fidélité ou non, utilisateurs app ou web, âge, fréquence).</span></li>
+<li>La recherche se déroulait en parallèle d’une migration Salesforce : les résultats devaient s’intégrer au planning des sprints sans ralentir les livraisons.</li>
+<li><span class="todo">Autres contraintes : calendrier, budget, accès aux clients, juridique (consentement RGPD).</span></li>
+</ul>
+</section>
+<!-- SYNTHESIS -->
+<section aria-labelledby="synthesis-title" class="cs-section" id="synthesis">
+<p class="label">03 · Synthèse</p>
+<h2 id="synthesis-title">Synthèse</h2>
+<p>J’ai regroupé les observations de chaque session dans une carte d’affinité, puis cartographié les parcours d’achat et de fidélité pour repérer où les clients abandonnaient ou hésitaient.</p>
+<figure class="figure">
+<div aria-label="Carte d’affinité : constats regroupés en trois thèmes" class="affinity" role="group">
+<section aria-labelledby="af-labels" class="affinity__cluster affinity__cluster--labels">
+<h3 class="label" id="af-labels">Labels produit</h3>
+<ul>
+<li>Les labels ne sont pas accessibles</li>
+<li>Textes et pastilles trop petits</li>
+<li>Confusion entre Nutri-Score et Eco-Score</li>
+<li>Le label AOP (appellation d’origine protégée) est à mettre en avant</li>
+<li>Lisibilité des informations moindre</li>
+<li>Hiérarchie de l’information à réorganiser</li>
+</ul>
+</section>
+<section aria-labelledby="af-loyalty" class="affinity__cluster affinity__cluster--loyalty">
+<h3 class="label" id="af-loyalty">Fidélité</h3>
+<ul>
+<li>Le système de points n’est pas compris</li>
+<li>Scroll horizontal difficile sur mobile</li>
+<li>Dernière tuile du carrousel très peu visible</li>
+</ul>
+</section>
+<section aria-labelledby="af-search" class="affinity__cluster affinity__cluster--search">
+<h3 class="label" id="af-search">Recherche</h3>
+<ul>
+<li>Système de filtres complexe</li>
+<li>Mêmes produits présents dans plusieurs filtres</li>
+<li>Pas de suggestion de saisie dans la barre de recherche</li>
+</ul>
+</section>
+</div>
+<figcaption>Carte d’affinité : observations issues des tests, focus groups et ateliers, regroupées en trois thèmes.</figcaption>
+</figure>
+<figure class="figure">
+<div class="figure__frame">
+<svg aria-labelledby="fig2-t" role="img" viewbox="0 0 400 260">
+<title id="fig2-t">Emplacement : parcours fidélité en cinq étapes, avec une courbe de satisfaction qui chute à l’étape trois</title>
+<rect fill="var(--paper)" height="260" width="400"></rect>
+<line stroke="var(--line)" stroke-dasharray="4 4" x1="30" x2="370" y1="130" y2="130"></line>
+<polyline fill="none" points="40,100 115,90 190,185 265,150 340,80" stroke="var(--navy)" stroke-linejoin="round" stroke-width="3"></polyline>
+<g fill="var(--navy)"><circle cx="40" cy="100" r="5"></circle><circle cx="115" cy="90" r="5"></circle><circle cx="265" cy="150" r="5"></circle><circle cx="340" cy="80" r="5"></circle></g>
+<circle cx="190" cy="185" fill="var(--coral)" r="8"></circle>
+<g fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="11" text-anchor="middle">
+<text x="40" y="215">Découvrir</text><text x="115" y="215">S’inscrire</text><text x="190" y="215">Cumuler</text><text x="265" y="215">Utiliser</text><text x="340" y="215">Revenir</text>
+</g>
+<text fill="var(--muted)" font-family="Sora, sans-serif" font-size="13" x="24" y="246">[À REMPLACER] vraie carte de parcours</text>
+</svg>
+</div>
+<figcaption>Parcours fidélité : la plus forte baisse de confiance. <span class="todo">remplacer les étapes et le point de friction par la vraie carte</span></figcaption>
+</figure>
+<h3>Ce que disent les clients</h3>
+<ul class="verbatims">
+<li><q><span class="todo">Verbatim anonymisé sur les labels produit</span></q><span>Participant 07 · utilisateur app</span></li>
+<li><q><span class="todo">Verbatim anonymisé sur le programme de fidélité</span></q><span>Focus group 2 · adhérent fidélité</span></li>
+<li><q><span class="todo">Verbatim anonymisé sur le choix d’un produit</span></q><span>Participant 15 · utilisateur web</span></li>
+</ul>
+</section>
+<!-- INSIGHTS -->
+<section aria-labelledby="insights-title" class="cs-section" id="insights">
+<p class="label">04 · Insights clés</p>
+<h2 id="insights-title">Insights clés</h2>
+<p>Chaque insight vient de la carte d’affinité ci-dessus et est relié à la décision qu’il a déclenchée et à ce qui a changé : la chaîne entre la preuve et le produit est visible.</p>
+<ol class="insights">
+<li class="insight">
+<span aria-hidden="true" class="insight__id">I-01</span>
+<div class="insight__body">
+<h3><span class="visually-hidden">Insight 1 : </span>Des labels produit peu lisibles et faciles à confondre</h3>
+<p>Les labels n’étaient pas accessibles et trop petits. Les clients confondaient le Nutri-Score et l’Eco-Score, le label AOP passait inaperçu, et la hiérarchie de l’information sur les tuiles rendait les détails clés difficiles à trouver.</p>
+<dl class="chain">
+<div><dt>Preuve</dt><dd>Tests utilisateurs · <span class="todo">x participants sur 25</span></dd></div>
+<div><dt>Décision</dt><dd>Refondre les tuiles produit : réorganiser la hiérarchie de l’information, agrandir et bien distinguer Nutri-Score et Eco-Score, et mettre en avant le label AOP.</dd></div>
+<div><dt>Résultat</dt><dd>Nouvelles tuiles en production, avec des informations produit clés plus lisibles.</dd></div>
+</dl>
+</div>
+</li>
+<li class="insight">
+<span aria-hidden="true" class="insight__id">I-02</span>
+<div class="insight__body">
+<h3><span class="visually-hidden">Insight 2 : </span>Le programme de fidélité n’était pas compris</h3>
+<p>Les clients ne comprenaient pas le fonctionnement du système de points. Sur mobile, le scroll horizontal était difficile et la dernière tuile du carrousel à peine visible : une partie du contenu passait inaperçue.</p>
+<dl class="chain">
+<div><dt>Preuve</dt><dd>Focus groups + tests utilisateurs</dd></div>
+<div><dt>Décision</dt><dd>Prioriser le parcours fidélité dans la roadmap et repenser la page fidélité, en expliquant simplement les points et en facilitant la navigation dans le carrousel.</dd></div>
+<div><dt>Résultat</dt><dd>Nouvelle page fidélité en ligne dans l’app.</dd></div>
+</dl>
+</div>
+</li>
+<li class="insight">
+<span aria-hidden="true" class="insight__id">I-03</span>
+<div class="insight__body">
+<h3><span class="visually-hidden">Insight 3 : </span>Recherche et filtres ralentissaient les clients</h3>
+<p>Le système de filtres était complexe, les mêmes produits apparaissaient dans plusieurs filtres, et la barre de recherche ne proposait aucune suggestion de saisie.</p>
+<dl class="chain">
+<div><dt>Preuve</dt><dd>Tests utilisateurs · <span class="todo">x participants sur 25</span></dd></div>
+<div><dt>Décision</dt><dd><span class="todo">Décision prise, par ex. simplifier la structure des filtres et ajouter des suggestions de recherche</span></dd></div>
+<div><dt>Résultat</dt><dd><span class="todo">Résultat ou statut dans la roadmap</span></dd></div>
+</dl>
+</div>
+</li>
+<li class="insight">
+<span aria-hidden="true" class="insight__id">I-04</span>
+<div class="insight__body">
+<h3><span class="visually-hidden">Insight 4 : </span>Des études ponctuelles ne suffisaient pas pour suivre le rythme des sprints</h3>
+<p>Les équipes avaient besoin de retours utilisateurs au rythme des livraisons, pas seulement à la fin d’une étude.</p>
+<dl class="chain">
+<div><dt>Preuve</dt><dd>Demandes du Produit et de la tech pendant la migration</dd></div>
+<div><dt>Décision</dt><dd>Mettre en place une recherche continue qui alimente chaque sprint.</dd></div>
+<div><dt>Résultat</dt><dd>Retours utilisateurs intégrés à la planification des sprints. <span class="todo">rythme</span></dd></div>
+</dl>
+</div>
+</li>
+</ol>
+</section>
+<!-- IMPACT -->
+<section aria-labelledby="impact-title" class="cs-section" id="impact">
+<p class="label">05 · Impact</p>
+<h2 id="impact-title">Recommandations et impact</h2>
+<h3>Décisions prises</h3>
+<ul>
+<li>Tuiles produit refondues pour afficher plus clairement les informations clés (Nutri-Score, Eco-Score).</li>
+<li>Parcours fidélité priorisé et page fidélité repensée, désormais en ligne dans l’app.</li>
+<li>Résultats de recherche utilisés pour les arbitrages et la priorisation de la roadmap web et mobile.</li>
+<li>Un processus de recherche continue qui alimente chaque sprint en retours utilisateurs.</li>
+</ul>
+<h3>Résultats</h3>
+<ul class="metrics">
+<li><span class="label">Tuiles produit</span><span class="ba">Refondues</span><span>Nutri-Score et Eco-Score plus lisibles</span></li>
+<li><span class="label">Page fidélité</span><span class="ba">En ligne dans l’app</span><span>Parcours priorisé dans la roadmap</span></li>
+<li><span class="label">Research ops</span><span class="ba">Chaque sprint</span><span>Retours utilisateurs intégrés à chaque sprint</span></li>
+<li><span class="label">Portée</span><span class="ba">12 M de clients</span><span>Plus de 1 200 magasins, web et app</span></li>
+</ul>
+</section>
+<!-- LEARNED -->
+<section aria-labelledby="learned-title" class="cs-section" id="learned">
+<p class="label">06 · Rétrospective</p>
+<h2 id="learned-title">Ce que j’ai appris et ce que je ferais autrement</h2>
+<ul>
+<li>Les ateliers de co-design avec les équipes tech et métier ont accéléré l’adoption des recommandations, parce qu’elles les avaient construites.</li>
+<li><span class="todo">Ce que tu ferais autrement, par ex. mesurer une base de référence avant la refonte pour montrer plus clairement l’avant / après.</span></li>
+<li><span class="todo">Une deuxième leçon, par ex. impliquer plus tôt les équipes magasin pour relier parcours en ligne et en magasin.</span></li>
+</ul>
+<p class="note"><strong>Confidentialité.</strong> Certaines données, écrans et verbatims ont été anonymisés ou simplifiés pour protéger Picard et ses clients. Les chiffres présentés sont ceux que je suis autorisée à partager.</p>
+</section>
+</article>
+</div>
+<div class="container">
+<nav aria-label="Autres études de cas" class="pager">
+<a class="prev" href="../index.html#work"><span class="label">← Précédente</span>Toutes les études de cas</a>
+<a class="next" href="signalconso-dgccrf-fr.html"><span class="label">Suivante →</span>SignalConso (DGCCRF)</a>
+</nav>
+</div>
+</main>
+<a aria-label="Revenir en haut" class="to-top" href="#top" id="to-top"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+<footer class="site-footer">
+<div class="container site-footer__inner">
+<span>© <span id="year">2026</span> Laura Pagliaroli · UX Researcher &amp; Product Discovery, Paris</span>
+<span><a href="../assets/Laura_Pagliaroli_CV_UX_Researcher_EN.pdf">CV (PDF)</a> · <a href="../index.html#contact">Me contacter</a></span>
+</div>
+</footer>
+<script src="../assets/main.js"></script>
+</body>
+</html>

@@ -40,6 +40,11 @@
     document.querySelectorAll(".lang-switch button").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
     });
+    // case study links follow the language: slug.html <-> slug-fr.html
+    document.querySelectorAll('a[href^="case-studies/"]').forEach(function (a) {
+      var href = a.getAttribute("href").replace(/-fr\.html$/, ".html");
+      a.setAttribute("href", lang === "fr" ? href.replace(/\.html$/, "-fr.html") : href);
+    });
     if (meta[lang]) {
       document.title = meta[lang].title;
       var d = document.querySelector('meta[name="description"]');
@@ -51,7 +56,7 @@
   document.querySelectorAll(".lang-switch button").forEach(function (b) {
     b.addEventListener("click", function () { setLang(b.dataset.lang); });
   });
-  if (document.querySelector(".lang-switch")) {
+  if (document.querySelector(".lang-switch button[data-lang]")) {
     var saved = null;
     try { saved = localStorage.getItem("lp-lang"); } catch (e) {}
     if (saved && saved !== "en") setLang(saved);

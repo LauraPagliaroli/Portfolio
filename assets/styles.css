@@ -162,6 +162,12 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
   min-width: 2.75rem; min-height: 2.25rem; cursor: pointer;
 }
 .lang-switch button[aria-pressed="true"] { background: var(--navy); color: var(--washi); }
+.lang-switch a {
+  display: inline-grid; place-items: center; font: 500 var(--fs-label)/1 var(--font-mono); letter-spacing: 0.06em;
+  color: var(--muted); text-decoration: none; border-radius: 999px; min-width: 2.75rem; min-height: 2.25rem;
+}
+.lang-switch a:hover { color: var(--navy); }
+.lang-switch a[aria-current="true"] { background: var(--navy); color: var(--washi); }
 
 .menu-toggle { display: none; }
 
