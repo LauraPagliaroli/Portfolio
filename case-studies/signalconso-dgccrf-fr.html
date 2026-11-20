@@ -103,11 +103,11 @@
 <p class="label">Sur cette page</p>
 <ol>
 <li><a href="#tldr">Cadrage</a></li>
-<li><a href="#context">Contexte et question</a></li>
-<li><a href="#approach">Approche</a></li>
-<li><a href="#synthesis">Synthèse</a></li>
+<li><a href="#context">Contexte</a></li>
+<li><a href="#approach">Méthode</a></li>
+<li><a href="#synthesis">Données</a></li>
 <li><a href="#insights">Insights clés</a></li>
-<li><a href="#impact">Recommandations et impact</a></li>
+<li><a href="#impact">Impact</a></li>
 <li><a href="#learned">Ce que j’ai appris</a></li>
 </ol>
 </nav>
@@ -122,35 +122,28 @@
 </ol>
 </div>
 </section>
-<section aria-labelledby="context-title" class="cs-section" id="context">
-<p class="label">01 · Contexte</p>
+<section aria-labelledby="context-title" class="cs-section cs-panel cs-panel--context" id="context">
+<p class="cs-kicker"><span aria-hidden="true">01</span> Contexte</p>
 <h2 id="context-title">Contexte et question de recherche</h2>
 <p>SignalConso est la plateforme de l’État où les consommateurs signalent fraudes et pratiques abusives. La DGCCRF a demandé à notre équipe d’augmenter l’engagement des 18-30 ans. L’usage existait mais restait limité : 73,5 % des jeunes interrogés connaissaient la DGCCRF, mais la plupart préféraient contacter directement les marques.</p>
 <p class="question">Comment engager les jeunes à être acteurs de leur consommation, sachant que les outils fournis par la DGCCRF ne sont pas adoptés ?</p>
-<h3>Les objectifs fixés au lancement</h3>
-<p>Lors de la réunion de lancement du 5 novembre 2024, la DGCCRF a répondu à une question : « Le projet sera réussi si… ». Trois objectifs en sont ressortis :</p>
+<h3>Objectifs</h3>
 <ul>
 <li>Faire mieux connaître la DGCCRF auprès des 18-30 ans.</li>
 <li>Obtenir plus de visites et de signalements sur SignalConso de la part de cette tranche d’âge.</li>
 <li>Simplifier les parcours entre les outils de « la famille Conso » : SignalConso, RappelConso et RéponseConso.</li>
 </ul>
-<h3>Questions de recherche</h3>
-<ul>
-<li>À quel point les jeunes connaissent-ils les services de la DGCCRF, et comment les perçoivent-ils ?</li>
-<li>Pourquoi n’utilisent-ils pas ces services, et pourquoi les utilisateurs semblent-ils perdus ?</li>
-<li>Comment fluidifier le parcours entre les différents services ?</li>
-<li>Comment s’appuyer sur la sensibilité écologique des jeunes pour encourager une consommation plus responsable ?</li>
-</ul>
-<h3>Enjeux et contraintes</h3>
-<ul>
-<li><strong>Cadre légal :</strong> RGPD, accessibilité du secteur public (RGAA) et protocoles administratifs.</li>
-<li><strong>Collaboration institutionnelle :</strong> product owners, développeurs et équipes communication, chacun avec ses priorités.</li>
-<li><strong>Budget et délais :</strong> aucun budget de recrutement, et 3 mois de projet vacances comprises.</li>
-</ul>
-<p>Une partie prenante a résumé l’ambition : rendre le service aussi intuitif qu’une application grand public et aussi digne de confiance qu’une association de consommateurs, dans le cadre d’un service public.</p>
+<p><strong>Contraintes :</strong> RGPD et accessibilité du service public (RGAA), plusieurs équipes institutionnelles aux priorités propres, aucun budget de recrutement et un délai de 3 mois.</p>
+<h3>Le traitement d'un signalement aujourd'hui</h3>
+<figure class="figure">
+<div class="figure__frame">
+<img alt="Circuit d’un signalement SignalConso en quatre étapes. 1 : je signale sur SignalConso, anonymement si je le souhaite. 2 : je reçois un accusé d’enregistrement. 3 : l’entreprise lit mon signalement ou refuse de le lire, et je reçois un accusé dans les deux cas. 4 : l’entreprise m’apporte une réponse ou décide de ne pas répondre, et j’en suis informé. En parallèle, le signalement est transmis à la répression des fraudes, les enquêteurs l’utilisent pour choisir les entreprises à surveiller et contrôler, et le déclenchement d’un contrôle n’est pas communiqué." decoding="async" height="773" loading="lazy" src="../assets/signalconso-report-workflow.webp" width="1600"/>
+</div>
+<figcaption>Le traitement d’un signalement SignalConso : l’utilisateur est informé à chaque étape côté entreprise, mais ce qui se passe côté répression des fraudes reste invisible. Source : DGCCRF.</figcaption>
+</figure>
 </section>
-<section aria-labelledby="approach-title" class="cs-section" id="approach">
-<p class="label">02 · Approche</p>
+<section aria-labelledby="approach-title" class="cs-section cs-panel cs-panel--method" id="approach">
+<p class="cs-kicker"><span aria-hidden="true">02</span> Méthode</p>
 <h2 id="approach-title">Approche et méthodologie</h2>
 <ul aria-label="Protocole de recherche" class="protocol">
 <li><strong>12</strong><span>plateformes analysées</span></li>
@@ -159,7 +152,7 @@
 <li><strong>10</strong><span>jours de social listening</span></li>
 <li><strong>2</strong><span>ateliers de co-création</span></li>
 </ul>
-<p>Sans budget de recrutement, j’ai combiné des méthodes peu coûteuses qui se recoupaient : un audit expert pour repérer les problèmes d’utilisabilité, un benchmark pour apprendre d’autres pays, des entretiens et une enquête pour le point de vue des utilisateurs, et du social listening pour entendre les jeunes quand on ne les interroge pas.</p>
+<p>Sans budget de recrutement, j'ai combiné des méthodes peu coûteuses qui se recoupent.</p>
 <div aria-label="Méthodes et justification, tableau défilant" class="method-table-wrap" role="region" tabindex="0">
 <table class="method-table">
 <caption class="visually-hidden">Méthodes, raisons de leur choix et échantillon</caption>
@@ -173,16 +166,27 @@
 </tbody>
 </table>
 </div>
-<h3>Recrutement et terrain</h3>
-<ul>
-<li><strong>Entretiens :</strong> 2 hommes et 5 femmes de 18 à 30 ans, vivant en France, recrutés dans notre entourage (« friends &amp; family ») et via une liste d’utilisateurs fournie par la DGCCRF. Sessions à distance de 30 à 45 minutes entre le 12 et le 24 novembre, chacune suivie de tâches d’utilisabilité sur SignalConso et d’un court questionnaire.</li>
-<li><strong>Enquête :</strong> une trentaine de questions validées avec la DGCCRF, diffusées sur ses comptes Instagram et X et sur nos propres réseaux LinkedIn du 25 au 28 novembre.</li>
-<li><strong>Sans compensation :</strong> malgré plusieurs relances, aucune compensation n’a pu être proposée aux participants.</li>
-</ul>
+<p><strong>Terrain :</strong> 7 entretiens à distance de 30 à 45 minutes avec des 18–30 ans, chacun suivi de tâches d'utilisabilité sur SignalConso ; un questionnaire d'une trentaine de questions diffusé sur les réseaux sociaux de la DGCCRF. Aucune incitation n'a pu être proposée.</p>
+<h3>Ateliers de co-création</h3>
+<p>Avec la DGCCRF sur Miro : des tours de « Comment pourrions-nous… », puis une priorisation sur une matrice impact / faisabilité. Dans l'équipe UX, des Crazy 8s et un vote ont recentré le travail sur une question : comment concevoir une procédure de suivi assez claire pour rassurer les utilisateurs ?</p>
+<figure class="figure">
+<div class="figure__frame">
+<img alt="Huit croquis répondant à « Comment serait la solution si… ? » : demander d’abord l’objectif de l’utilisateur, la pédagogie comme porte d’entrée, un onboarding intégré au signalement, un chatbot IA intégré au parcours, l’orientation vers les droits du consommateur, une notion de signalement qui atténue l’effet « délation », des notifications de suivi, et un suivi central, omnicanal mais optionnel." decoding="async" height="1272" loading="lazy" src="../assets/signalconso-what-if.webp" width="1022"/>
+</div>
+<figcaption>Idéation « Et si… ? » (What if) issue des ateliers de co-conception : huit croquis, un par hypothèse, de l’onboarding par objectif au suivi omnicanal optionnel.</figcaption>
+</figure>
 </section>
-<section aria-labelledby="synthesis-title" class="cs-section" id="synthesis">
-<p class="label">03 · Synthèse</p>
-<h2 id="synthesis-title">Synthèse</h2>
+<section aria-labelledby="synthesis-title" class="cs-section cs-panel cs-panel--data" id="synthesis">
+<p class="cs-kicker"><span aria-hidden="true">03</span> Données</p>
+<h2 id="synthesis-title">Ce que montrent les données</h2>
+<h3>Principaux résultats de l’enquête</h3>
+<ul class="metrics">
+<li><span class="label">Contactent d’abord le SAV</span><span class="ba">73,5 %</span><span>Seuls 18,4 % pensent d’abord aux services de l’État</span></li>
+<li><span class="label">Veulent connaître leurs droits</span><span class="ba">65,3 %</span><span>Aimeraient en savoir plus sur leurs droits de consommateurs</span></li>
+<li><span class="label">Veulent une résolution rapide</span><span class="ba">77,6 %</span><span>57,1 % cherchent un dédommagement ; 36,7 % veulent que l’État régule davantage</span></li>
+<li><span class="label">Signaleraient le greenwashing</span><span class="ba">71,4 %</span><span>59,2 % sont intéressés par un guide des labels écologiques</span></li>
+</ul>
+<p>Quand les jeunes connaissent SignalConso, ils y reviennent : 34,1 % l’avaient utilisé une ou deux fois, et 12,2 % plus de cinq fois dans l’année. L’enjeu était la notoriété, pas la satisfaction.</p>
 <h3>Ce que l’audit a montré</h3>
 <ul>
 <li><strong>Points forts :</strong> typographie claire et bons retours visuels, comme les barres de progression.</li>
@@ -202,14 +206,6 @@
 </tbody>
 </table>
 </div>
-<h3>Principaux résultats de l’enquête</h3>
-<ul class="metrics">
-<li><span class="label">Contactent d’abord le SAV</span><span class="ba">73,5 %</span><span>Seuls 18,4 % pensent d’abord aux services de l’État</span></li>
-<li><span class="label">Veulent connaître leurs droits</span><span class="ba">65,3 %</span><span>Aimeraient en savoir plus sur leurs droits de consommateurs</span></li>
-<li><span class="label">Veulent une résolution rapide</span><span class="ba">77,6 %</span><span>57,1 % cherchent un dédommagement ; 36,7 % veulent que l’État régule davantage</span></li>
-<li><span class="label">Signaleraient le greenwashing</span><span class="ba">71,4 %</span><span>59,2 % sont intéressés par un guide des labels écologiques</span></li>
-</ul>
-<p>Quand les jeunes connaissent SignalConso, ils y reviennent : 34,1 % l’avaient utilisé une ou deux fois, et 12,2 % plus de cinq fois dans l’année. L’enjeu était la notoriété, pas la satisfaction.</p>
 <h3>Ce que le social listening a révélé</h3>
 <figure class="figure">
 <div class="figure__frame">
@@ -224,7 +220,6 @@
 <li><q>Pourquoi la DGCCRF ne sanctionne-t-elle pas la fast fashion ?</q><span>Social listening · X / TikTok, reformulé</span></li>
 </ul>
 <h3>Deux archétypes</h3>
-<p>Nous avons choisi des archétypes plutôt que des personas : ils décrivent des habitudes et des motivations sans les lier à un âge, un lieu ou un contexte social, ce qui convient à un service public utilisé par tous.</p>
 <div class="offers">
 <article class="offer">
 <p class="label label--coral">Archétype 1</p>
@@ -247,30 +242,9 @@
 </ul>
 </article>
 </div>
-<h3>Point de départ de la conception : le circuit de traitement d’un signalement</h3>
-<p>Nous avons commencé la conception à partir du traitement actuel d’un signalement, pour repérer où l’utilisateur perd la trace de son signalement et où le suivi pourrait devenir visible.</p>
-<figure class="figure">
-<div class="figure__frame">
-<img alt="Circuit d’un signalement SignalConso en quatre étapes. 1 : je signale sur SignalConso, anonymement si je le souhaite. 2 : je reçois un accusé d’enregistrement. 3 : l’entreprise lit mon signalement ou refuse de le lire, et je reçois un accusé dans les deux cas. 4 : l’entreprise m’apporte une réponse ou décide de ne pas répondre, et j’en suis informé. En parallèle, le signalement est transmis à la répression des fraudes, les enquêteurs l’utilisent pour choisir les entreprises à surveiller et contrôler, et le déclenchement d’un contrôle n’est pas communiqué." decoding="async" height="773" loading="lazy" src="../assets/signalconso-report-workflow.webp" width="1600"/>
-</div>
-<figcaption>Le traitement d’un signalement SignalConso : l’utilisateur est informé à chaque étape côté entreprise, mais ce qui se passe côté répression des fraudes reste invisible. Source : DGCCRF.</figcaption>
-</figure>
-<h3>Le déroulé des ateliers de co-création</h3>
-<ul>
-<li><strong>Avec la DGCCRF</strong> (à distance, sur Miro) : un brise-glace « Stinky Fish » pour exprimer les inquiétudes, cinq sessions de 5 minutes de « Comment pourrions-nous… » sur deux questions, en rebondissant sur les idées des autres, puis une priorisation sur une matrice impact / faisabilité.</li>
-<li><strong>Au sein de l’équipe UX :</strong> trois thèmes récurrents sont ressortis (responsabilisation des consommateurs, autonomie des utilisateurs, suivi des signalements). Après un Crazy 8 et un vote, nous nous sommes concentrés sur une question : comment créer une procédure de suivi assez claire pour donner un sentiment de sécurité ?</li>
-</ul>
-<div class="figure-stack">
-<figure class="figure">
-<div class="figure__frame">
-<img alt="Huit croquis répondant à « Comment serait la solution si… ? » : demander d’abord l’objectif de l’utilisateur, la pédagogie comme porte d’entrée, un onboarding intégré au signalement, un chatbot IA intégré au parcours, l’orientation vers les droits du consommateur, une notion de signalement qui atténue l’effet « délation », des notifications de suivi, et un suivi central, omnicanal mais optionnel." decoding="async" height="1272" loading="lazy" src="../assets/signalconso-what-if.webp" width="1022"/>
-</div>
-<figcaption>Idéation « Et si… ? » (What if) issue des ateliers de co-conception : huit croquis, un par hypothèse, de l’onboarding par objectif au suivi omnicanal optionnel.</figcaption>
-</figure>
-</div>
 </section>
-<section aria-labelledby="insights-title" class="cs-section" id="insights">
-<p class="label">04 · Insights clés</p>
+<section aria-labelledby="insights-title" class="cs-section cs-panel cs-panel--insights" id="insights">
+<p class="cs-kicker"><span aria-hidden="true">04</span> Insights clés</p>
 <h2 id="insights-title">Insights clés</h2>
 <p>Quatre insights expliquent ce désengagement. Chacun a orienté une décision dans les ateliers et le prototype.</p>
 <ol class="insights">
@@ -324,19 +298,19 @@
 </li>
 </ol>
 </section>
-<section aria-labelledby="impact-title" class="cs-section" id="impact">
-<p class="label">05 · Impact</p>
+<section aria-labelledby="impact-title" class="cs-section cs-panel cs-panel--impact" id="impact">
+<p class="cs-kicker"><span aria-hidden="true">05</span> Impact</p>
 <h2 id="impact-title">Recommandations et impact</h2>
+<p class="cs-outcome">Mes recommandations ont été retenues pour la prochaine version du service.</p>
 <h3>Décisions prises avec la DGCCRF</h3>
 <ul>
 <li>Un accompagnement pas à pas, associant un assistant IA à un accès à un appui humain et à l’information sur les droits.</li>
 <li>Un suivi personnalisable : l’utilisateur choisit les notifications e-mail ou SMS et voit à quoi son signalement a abouti.</li>
 <li>Un volet écologique avec un parcours guidé de signalement du greenwashing.</li>
 <li>Un axe communication pour gagner en notoriété : campagnes ciblées sur les réseaux sociaux, partenariats avec des influenceurs et des organisations pertinentes, et contenus pédagogiques (vidéos explicatives, guides interactifs).</li>
-<li>User flows, wireframes et prototypes Figma des parcours de signalement, itérés en tests utilisateurs modérés.</li>
-<li>Mes recommandations ont été retenues pour la prochaine version du service.</li>
 </ul>
-<p>Le prototype haute fidélité sur Figma compte 5 écrans principaux et 15 variantes, avec un UI kit. Il couvre trois scénarios d’usage : signaler une pratique déloyale simplement pour aider un commerce à s’améliorer, se faire aider par l’assistant IA de SignalConso, et choisir de n’être notifié que par e-mail.</p>
+<h3>Prototype</h3>
+<p>Prototype Figma haute fidélité : 5 écrans principaux, 15 variantes et un UI kit, itéré grâce à des tests d'utilisabilité modérés.</p>
 <figure class="figure">
 <div class="figure__frame">
 <img alt="Quatre écrans mobiles du prototype SignalConso. L’écran de confirmation affiche le numéro de dossier et explique la suite et les délais. L’écran de suivi demande ce numéro pour accéder au signalement. Une fois saisi, une barre de progression indique que le dossier est en cours d’examen, avec un bouton pour envoyer le signalement à la DGCCRF." decoding="async" height="704" loading="lazy" src="../assets/signalconso-prototype.webp" width="1600"/>
@@ -344,7 +318,6 @@
 <figcaption>Prototype Figma : un écran de confirmation avec numéro de dossier, l’accès au suivi grâce à ce numéro, et une barre de progression qui montre où en est le dossier. Le nom, l’adresse e-mail et le numéro de dossier affichés sont fictifs, créés pour les besoins du prototype. <a href="https://www.figma.com/proto/FO6hJ2ns0vTACOTvRLLZWs/Signal-Conso?node-id=1061-29461&amp;starting-point-node-id=1061%3A24491&amp;page-id=1%3A3">Ouvrir le prototype dans Figma</a></figcaption>
 </figure>
 <h3>Tester le prototype : le parcours émotionnel de l’utilisateur</h3>
-<p>Nous avons cartographié ce qu’un participant faisait, pensait et ressentait à chaque étape du nouveau parcours de signalement. La carte montre précisément où l’expérience se brise et où les nouvelles fonctionnalités font la différence.</p>
 <figure class="figure">
 <div class="figure__frame">
 <img alt="Carte de parcours du prototype en sept étapes, avec actions, idées et émotions. Écran d’accueil : questionnement, se demande s’il faut déjà un numéro de suivi. Déterminer le signalement : détendu, compréhension instantanée. Adresser le signalement : confusion et stress, trop de texte, confusion entre la vidéo et le mot transcription. Apparition du chatbot : questionnement, n’a pas le réflexe d’utiliser l’IA. Discussion avec le chatbot : surprise positive, se demande si l’on peut modifier un signalement fait par le chatbot. Récapitulatif : ravi que le chatbot ait tout pré-rempli. Numéro de suivi : enchanté et rassuré." decoding="async" height="947" loading="lazy" src="../assets/signalconso-journey-map.webp" width="1600"/>
@@ -363,11 +336,9 @@
 <li><span class="label">Erreurs de signalement</span><span class="ba">En baisse</span><span>Des parcours plus clairs et guidés</span></li>
 <li><span class="label">Notoriété</span><span class="ba">En hausse</span><span>Volume de recherche des mots-clés, engagement sur les réseaux sociaux, appels à RéponseConso</span></li>
 </ul>
-<p>Plan de validation : tests utilisateurs modérés avec 10 personnes de 18 à 30 ans sur le tableau de suivi.</p>
-<p class="note">Résultat : un parcours de signalement simplifié, et des recommandations retenues par la DGCCRF pour la prochaine version de SignalConso. Les KPI ci-dessus sont les objectifs fixés avec la DGCCRF pour le mesurer.</p>
 </section>
-<section aria-labelledby="learned-title" class="cs-section" id="learned">
-<p class="label">06 · Rétrospective</p>
+<section aria-labelledby="learned-title" class="cs-section cs-panel cs-panel--learned" id="learned">
+<p class="cs-kicker"><span aria-hidden="true">06</span> Rétrospective</p>
 <h2 id="learned-title">Ce que j’ai appris et ce que je ferais autrement</h2>
 <ul>
 <li>Sans budget de recrutement, combiner plusieurs méthodes légères a apporté des preuves plus solides qu’une seule : l’enquête a mesuré ce que les entretiens révélaient, et le social listening a confirmé les deux.</li>

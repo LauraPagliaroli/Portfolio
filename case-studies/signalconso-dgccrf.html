@@ -106,11 +106,11 @@
     <p class="label">On this page</p>
     <ol>
       <li><a href="#tldr">Framing</a></li>
-      <li><a href="#context">Context &amp; question</a></li>
-      <li><a href="#approach">Approach</a></li>
-      <li><a href="#synthesis">Synthesis</a></li>
+      <li><a href="#context">Context</a></li>
+      <li><a href="#approach">Method</a></li>
+      <li><a href="#synthesis">Data</a></li>
       <li><a href="#insights">Key insights</a></li>
-      <li><a href="#impact">Recommendations &amp; impact</a></li>
+      <li><a href="#impact">Impact</a></li>
       <li><a href="#learned">What I learned</a></li>
     </ol>
   </nav>
@@ -128,36 +128,29 @@
       </div>
     </section>
 
-    <section class="cs-section" id="context" aria-labelledby="context-title">
-      <p class="label">01 · Context</p>
+    <section class="cs-section cs-panel cs-panel--context" id="context" aria-labelledby="context-title">
+      <p class="cs-kicker"><span aria-hidden="true">01</span> Context</p>
       <h2 id="context-title">Context and research question</h2>
       <p>SignalConso is the French government platform where consumers report fraud and unfair practices. The DGCCRF asked our team to increase engagement among 18–30-year-olds. Usage was real but narrow: 73.5% of the young people we surveyed knew the DGCCRF, yet most preferred to contact brands directly.</p>
       <p class="question">How can we get young people to take an active role in their consumption, when the tools provided by the DGCCRF are not adopted?</p>
-      <h3>Objectives set at the kick-off</h3>
-      <p>At the kick-off meeting on 5 November 2024, the DGCCRF answered one question: "The project will be a success if…". Three objectives came out of it:</p>
+      <h3>Objectives</h3>
       <ul>
         <li>Make the DGCCRF better known among 18–30-year-olds.</li>
         <li>Get more visits and more reports on SignalConso from this age group.</li>
         <li>Simplify the journeys across the "Conso family" of tools: SignalConso, RappelConso and RéponseConso.</li>
       </ul>
-      <h3>Research questions</h3>
-      <ul>
-        <li>How well do young people know the DGCCRF's services, and how do they perceive them?</li>
-        <li>Why don't they use these services, and why do users seem lost?</li>
-        <li>How can the journey between the different services be made smoother?</li>
-        <li>How can young people's environmental awareness encourage more responsible consumption?</li>
-      </ul>
-      <h3>Stakes and constraints</h3>
-      <ul>
-        <li><strong>Legal framework:</strong> GDPR, public-sector accessibility (RGAA) and administrative protocols.</li>
-        <li><strong>Institutional collaboration:</strong> product owners, developers and communication teams, each with their own priorities.</li>
-        <li><strong>Budget and time:</strong> no budget for recruitment, and a 3-month timeline that included holidays.</li>
-      </ul>
-      <p>One stakeholder summed up the ambition: make the service as intuitive as a popular consumer app and as trusted as a consumer association, within the limits of a public service.</p>
+      <p><strong>Constraints:</strong> GDPR and public-sector accessibility (RGAA), several institutional teams with their own priorities, no recruitment budget and a 3-month timeline.</p>
+      <h3>How a report is processed today</h3>
+      <figure class="figure">
+        <div class="figure__frame">
+          <img src="../assets/signalconso-report-workflow.webp" width="1600" height="773" loading="lazy" decoding="async" alt="SignalConso report workflow in four steps. 1: I report on SignalConso, anonymously if I wish. 2: I receive an acknowledgement of registration. 3: the company reads my report or refuses to read it, and I am notified either way. 4: the company answers me or decides not to, and I am informed. In parallel, the report is passed to the fraud control services, investigators use it to choose which companies to monitor and inspect, and any inspection triggered is not communicated.">
+        </div>
+        <figcaption>How a SignalConso report is processed: the user is informed at each step with the company, but what happens on the fraud-control side stays invisible. Source: DGCCRF.</figcaption>
+      </figure>
     </section>
 
-    <section class="cs-section" id="approach" aria-labelledby="approach-title">
-      <p class="label">02 · Approach</p>
+    <section class="cs-section cs-panel cs-panel--method" id="approach" aria-labelledby="approach-title">
+      <p class="cs-kicker"><span aria-hidden="true">02</span> Method</p>
       <h2 id="approach-title">Approach and methodology</h2>
       <ul class="protocol" aria-label="Research protocol">
         <li><strong>12</strong><span>platforms benchmarked</span></li>
@@ -166,7 +159,7 @@
         <li><strong>10</strong><span>days of social listening</span></li>
         <li><strong>2</strong><span>co-creation workshops</span></li>
       </ul>
-      <p>With no recruitment budget, I combined low-cost methods that cross-checked each other: an expert audit to find usability issues, a benchmark to learn from other countries, interviews and a survey for the users' view, and social listening to hear young people when they were not being asked.</p>
+      <p>With no recruitment budget, I combined low-cost methods that cross-checked each other.</p>
       <div class="method-table-wrap" tabindex="0" role="region" aria-label="Methods and rationale, scrollable table">
         <table class="method-table">
           <caption class="visually-hidden">Methods, why they were chosen, and sample</caption>
@@ -180,17 +173,28 @@
           </tbody>
         </table>
       </div>
-      <h3>Recruitment and fieldwork</h3>
-      <ul>
-        <li><strong>Interviews:</strong> 2 men and 5 women aged 18–30, living in France, recruited from a "friends and family" base and a user list shared by the DGCCRF. Remote sessions of 30–45 minutes between 12 and 24 November, each followed by usability tasks on SignalConso and a short questionnaire.</li>
-        <li><strong>Survey:</strong> about thirty questions validated with the DGCCRF, shared on its Instagram and X accounts and on our own LinkedIn networks from 25 to 28 November.</li>
-        <li><strong>No incentives:</strong> despite several requests, no compensation could be offered to participants.</li>
-      </ul>
+      <p><strong>Fieldwork:</strong> 7 remote interviews of 30–45 minutes with people aged 18–30, each followed by usability tasks on SignalConso; a survey of about thirty questions shared on the DGCCRF's social media. No incentives could be offered.</p>
+      <h3>Co-creation workshops</h3>
+      <p>With the DGCCRF on Miro: "How might we…" rounds, then prioritisation on an impact / feasibility matrix. Within the UX team, Crazy 8s and a vote focused the work on one question: how can we design a follow-up procedure clear enough to make users feel secure?</p>
+      <figure class="figure">
+          <div class="figure__frame">
+            <img src="../assets/signalconso-what-if.webp" width="1022" height="1272" loading="lazy" decoding="async" alt="Eight hand-drawn sketches answering “What would the solution look like if…?”: asking users their goal first, education as the entry point, onboarding built into reporting, a fully integrated AI chatbot, guiding users to their consumer rights, reframing reporting to avoid the idea of informing on someone, follow-up notifications, and a central but optional omnichannel follow-up.">
+          </div>
+          <figcaption>“What if…?” ideation from the co-design workshops: eight sketches, one per hypothesis, from goal-based onboarding to an optional omnichannel follow-up.</figcaption>
+        </figure>
     </section>
 
-    <section class="cs-section" id="synthesis" aria-labelledby="synthesis-title">
-      <p class="label">03 · Synthesis</p>
-      <h2 id="synthesis-title">Synthesis</h2>
+    <section class="cs-section cs-panel cs-panel--data" id="synthesis" aria-labelledby="synthesis-title">
+      <p class="cs-kicker"><span aria-hidden="true">03</span> Data</p>
+      <h2 id="synthesis-title">What the data showed</h2>
+      <h3>Key survey findings</h3>
+      <ul class="metrics">
+        <li><span class="label">Contact after-sales first</span><span class="ba">73.5%</span><span>Only 18.4% think of state services first</span></li>
+        <li><span class="label">Want to know their rights</span><span class="ba">65.3%</span><span>Would like to learn more about consumer rights</span></li>
+        <li><span class="label">Want a quick resolution</span><span class="ba">77.6%</span><span>57.1% seek compensation; 36.7% want the State to regulate more</span></li>
+        <li><span class="label">Would report greenwashing</span><span class="ba">71.4%</span><span>59.2% are interested in a guide to eco-labels</span></li>
+      </ul>
+      <p>When young people know SignalConso, they come back to it: 34.1% had used it once or twice, and 12.2% more than five times in the past year. The challenge was awareness, not satisfaction.</p>
       <h3>What the audit showed</h3>
       <ul>
         <li><strong>Strengths:</strong> clear typography and good feedback, such as progress bars.</li>
@@ -198,7 +202,6 @@
         <li><strong>No follow-up:</strong> nothing told users what happened to their report.</li>
         <li><strong>Fragmented journey:</strong> SignalConso, RappelConso and RéponseConso confused people.</li>
       </ul>
-
       <h3>What the benchmark taught us</h3>
       <div class="method-table-wrap" tabindex="0" role="region" aria-label="Benchmark highlights, scrollable table">
         <table class="method-table">
@@ -211,16 +214,6 @@
           </tbody>
         </table>
       </div>
-
-      <h3>Key survey findings</h3>
-      <ul class="metrics">
-        <li><span class="label">Contact after-sales first</span><span class="ba">73.5%</span><span>Only 18.4% think of state services first</span></li>
-        <li><span class="label">Want to know their rights</span><span class="ba">65.3%</span><span>Would like to learn more about consumer rights</span></li>
-        <li><span class="label">Want a quick resolution</span><span class="ba">77.6%</span><span>57.1% seek compensation; 36.7% want the State to regulate more</span></li>
-        <li><span class="label">Would report greenwashing</span><span class="ba">71.4%</span><span>59.2% are interested in a guide to eco-labels</span></li>
-      </ul>
-      <p>When young people know SignalConso, they come back to it: 34.1% had used it once or twice, and 12.2% more than five times in the past year. The challenge was awareness, not satisfaction.</p>
-
       <h3>What social listening revealed</h3>
       <figure class="figure">
         <div class="figure__frame">
@@ -228,16 +221,13 @@
         </div>
         <figcaption>Posts on X tagging the DGCCRF: influencer fraud, sanctions seen as too weak, and a SignalConso report with no visible effect. Names, handles and profile pictures are blurred.</figcaption>
       </figure>
-
       <h3>What young consumers said</h3>
       <ul class="verbatims">
         <li><q>I hate chatbots, you never know if a real person will see your issue.</q><span>Interview · 18–30</span></li>
         <li><q>I gave up because I didn't know if my report would matter.</q><span>Interview · 18–30</span></li>
         <li><q>Why isn't the DGCCRF sanctioning fast fashion?</q><span>Social listening · X / TikTok, paraphrased</span></li>
       </ul>
-
       <h3>Two archetypes</h3>
-      <p>We chose archetypes rather than personas: they describe habits and motivations without tying them to age, place or social context, which suits a public service used by everyone.</p>
       <div class="offers">
         <article class="offer">
           <p class="label label--coral">Archetype 1</p>
@@ -260,34 +250,10 @@
           </ul>
         </article>
       </div>
-
-      <h3>Design starting point: the report-processing workflow</h3>
-      <p>We began the design phase from the way a report is processed today, to see where users lose sight of their report and where follow-up could be made visible.</p>
-      <figure class="figure">
-        <div class="figure__frame">
-          <img src="../assets/signalconso-report-workflow.webp" width="1600" height="773" loading="lazy" decoding="async" alt="SignalConso report workflow in four steps. 1: I report on SignalConso, anonymously if I wish. 2: I receive an acknowledgement of registration. 3: the company reads my report or refuses to read it, and I am notified either way. 4: the company answers me or decides not to, and I am informed. In parallel, the report is passed to the fraud control services, investigators use it to choose which companies to monitor and inspect, and any inspection triggered is not communicated.">
-        </div>
-        <figcaption>How a SignalConso report is processed: the user is informed at each step with the company, but what happens on the fraud-control side stays invisible. Source: DGCCRF.</figcaption>
-      </figure>
-
-      <h3>How the co-creation workshops ran</h3>
-      <ul>
-        <li><strong>With the DGCCRF</strong> (remote, on Miro): a "Stinky Fish" icebreaker to voice concerns, five 5-minute rounds of "How might we…" on two questions, building on each other's ideas, then prioritisation on an impact / feasibility matrix.</li>
-        <li><strong>Within the UX team:</strong> three recurring themes emerged (consumer empowerment, user autonomy, report follow-up). After Crazy 8s and a vote, we focused on one question: how can we design a follow-up procedure clear enough to make users feel secure?</li>
-      </ul>
-
-      <div class="figure-stack">
-        <figure class="figure">
-          <div class="figure__frame">
-            <img src="../assets/signalconso-what-if.webp" width="1022" height="1272" loading="lazy" decoding="async" alt="Eight hand-drawn sketches answering “What would the solution look like if…?”: asking users their goal first, education as the entry point, onboarding built into reporting, a fully integrated AI chatbot, guiding users to their consumer rights, reframing reporting to avoid the idea of informing on someone, follow-up notifications, and a central but optional omnichannel follow-up.">
-          </div>
-          <figcaption>“What if…?” ideation from the co-design workshops: eight sketches, one per hypothesis, from goal-based onboarding to an optional omnichannel follow-up.</figcaption>
-        </figure>
-      </div>
     </section>
 
-    <section class="cs-section" id="insights" aria-labelledby="insights-title">
-      <p class="label">04 · Key insights</p>
+    <section class="cs-section cs-panel cs-panel--insights" id="insights" aria-labelledby="insights-title">
+      <p class="cs-kicker"><span aria-hidden="true">04</span> Key insights</p>
       <h2 id="insights-title">Key insights</h2>
       <p>Four insights explained the disengagement. Each one shaped a decision in the workshops and the prototype.</p>
       <ol class="insights">
@@ -342,29 +308,26 @@
       </ol>
     </section>
 
-    <section class="cs-section" id="impact" aria-labelledby="impact-title">
-      <p class="label">05 · Impact</p>
+    <section class="cs-section cs-panel cs-panel--impact" id="impact" aria-labelledby="impact-title">
+      <p class="cs-kicker"><span aria-hidden="true">05</span> Impact</p>
       <h2 id="impact-title">Recommendations and impact</h2>
+      <p class="cs-outcome">My recommendations were adopted for the next version of the service.</p>
       <h3>Decisions taken with the DGCCRF</h3>
       <ul>
         <li>Step-by-step guidance, combining an AI assistant with access to human support and rights information.</li>
         <li>Customisable follow-up: users choose email or SMS updates and see what their report led to.</li>
         <li>An ecological focus with a guided greenwashing reporting flow.</li>
         <li>A communication axis to build awareness: targeted social media campaigns, partnerships with influencers and relevant organisations, and educational content (explainer videos, interactive guides).</li>
-        <li>User flows, wireframes and Figma prototypes of the reporting journeys, iterated through moderated usability testing.</li>
-        <li>My recommendations were adopted for the next version of the service.</li>
       </ul>
-
-      <p>The high-fidelity Figma prototype has 5 main screens and 15 variants, with a UI kit. It covers three usage scenarios: reporting an unfair practice simply to help a shop improve, getting help from the SignalConso AI assistant, and choosing to be notified by email only.</p>
+      <h3>Prototype</h3>
+      <p>High-fidelity Figma prototype: 5 main screens, 15 variants and a UI kit, iterated through moderated usability testing.</p>
       <figure class="figure">
         <div class="figure__frame">
           <img src="../assets/signalconso-prototype.webp" width="1600" height="704" loading="lazy" decoding="async" alt="Four mobile screens of the SignalConso prototype. The confirmation screen shows the case number and explains what happens next and within what time frame. The follow-up screen asks for the case number to access the report. Once entered, a progress bar shows that the case is being reviewed, with a button to send the report to the DGCCRF.">
         </div>
         <figcaption>Figma prototype: a confirmation screen with a case number, access to follow-up with that number, and a progress bar showing where the case stands. The name, email address and case number shown are fictitious, created for the prototype. <a href="https://www.figma.com/proto/FO6hJ2ns0vTACOTvRLLZWs/Signal-Conso?node-id=1061-29461&amp;starting-point-node-id=1061%3A24491&amp;page-id=1%3A3">Open the prototype in Figma</a></figcaption>
       </figure>
-
       <h3>Testing the prototype: the user's emotional journey</h3>
-      <p>We mapped what a participant did, thought and felt at each step of the new reporting journey. The map shows exactly where the experience breaks and where the new features pay off.</p>
       <figure class="figure">
         <div class="figure__frame">
           <img src="../assets/signalconso-journey-map.webp" width="1600" height="947" loading="lazy" decoding="async" alt="Journey map of the prototype in seven steps, with actions, thoughts and emotions. Home screen: questioning, wonders whether a tracking number is needed. Choosing the type of report: relaxed, instant understanding. Addressing the report: confusion and stress, too much text, confused by the video and the word transcription. Chatbot appears: questioning, does not think of using the AI. Conversation with the chatbot: positive surprise, wonders whether a report made by the chatbot can be changed. Report summary: delighted that the chatbot pre-filled everything. Tracking number confirmation: enchanted and reassured.">
@@ -376,7 +339,6 @@
         <li><strong>What worked:</strong> the AI conversation came as a positive surprise, the pre-filled summary delighted users, and the tracking number reassured them.</li>
         <li><strong>Next iteration:</strong> shorten the content at the addressing step and make the assistant visible from the start of the journey.</li>
       </ul>
-
       <h3>How success will be measured</h3>
       <ul class="metrics">
         <li><span class="label">Weekly reports, 18–30</span><span class="ba">×2 → 72 / week</span><span>From about 36 eco-transition reports a week</span></li>
@@ -384,12 +346,10 @@
         <li><span class="label">Reporting errors</span><span class="ba">Fewer</span><span>Clearer, guided journeys</span></li>
         <li><span class="label">Awareness</span><span class="ba">Up</span><span>Keyword search volume, social engagement, calls to RéponseConso</span></li>
       </ul>
-      <p>Validation plan: moderated usability tests with 10 users aged 18–30 on the follow-up dashboard.</p>
-      <p class="note">Outcome: a simpler reporting journey, and recommendations adopted by the DGCCRF for the next version of SignalConso. The KPIs above are the targets set with the DGCCRF to measure it.</p>
     </section>
 
-    <section class="cs-section" id="learned" aria-labelledby="learned-title">
-      <p class="label">06 · Retrospective</p>
+    <section class="cs-section cs-panel cs-panel--learned" id="learned" aria-labelledby="learned-title">
+      <p class="cs-kicker"><span aria-hidden="true">06</span> Retrospective</p>
       <h2 id="learned-title">What I learned and what I would do differently</h2>
       <ul>
         <li>Without a recruitment budget, combining several light methods gave stronger evidence than any single one: the survey sized what interviews revealed, and social listening confirmed both.</li>
@@ -398,6 +358,7 @@
       </ul>
       <p class="note"><strong>Confidentiality.</strong> This project was carried out with the DGCCRF as part of the Gobelins programme. Verbatims are anonymised; on social media posts, names, handles and profile pictures are blurred.</p>
     </section>
+
   </article>
 </div>
 

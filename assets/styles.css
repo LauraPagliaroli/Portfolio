@@ -567,3 +567,21 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 /* Figures stacked full width (large sketches stay legible) */
 .figure-stack { display: grid; gap: 1.75rem; }
 .metrics:has(> li:nth-child(4):last-child) { grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+
+/* ---- Case study panels: light distinction between sections ---- */
+.cs-panel { border: 1px solid var(--line); border-radius: calc(var(--radius) * 2); padding: clamp(1.5rem, 3.5vw, 2.5rem); scroll-margin-top: 6rem; }
+.cs-panel--method, .cs-panel--insights, .cs-panel--learned { background: var(--sand); border-color: transparent; }
+.cs-body:has(.cs-panel) { gap: clamp(1.75rem, 3.5vw, 2.5rem); }
+.cs-kicker { display: inline-flex; align-items: center; gap: 0.5rem; width: fit-content; margin: 0; padding: 0.3rem 0.8rem; border-radius: 999px;
+  font-family: var(--font-mono); font-size: var(--fs-label); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500;
+  color: var(--navy); background: color-mix(in srgb, var(--navy) 8%, transparent); }
+.cs-kicker span { color: var(--coral-ink); }
+:root[data-theme="dark"] .cs-kicker span { color: var(--coral); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cs-kicker span { color: var(--coral); } }
+.cs-panel h2 { margin-top: -0.25rem; }
+.cs-outcome { margin: 0; padding: 1rem 1.25rem; border-left: 4px solid var(--coral); background: color-mix(in srgb, var(--coral) 9%, transparent);
+  border-radius: 0 var(--radius) var(--radius) 0; color: var(--navy); font-weight: 600; max-width: var(--measure); }
+.cs-panel .note { background: var(--paper); }
+.cs-section ul.metrics, .cs-section ul.verbatims, .cs-section ol.insights, .cs-section ul.protocol { padding-left: 0; max-width: none; }
+.cs-panel .protocol { grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); }
+.metrics li { align-content: start; }
