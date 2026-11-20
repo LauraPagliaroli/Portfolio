@@ -126,7 +126,7 @@ window.I18N = {
     "ab.p2": "Avant l’UX, la relation client chez Air France et la vente B2B internationale m’ont appris à décoder les besoins, à gérer des parties prenantes aux intérêts divergents et à prioriser sous contrainte.",
     "ab.h3": "Ce qui me distingue",
     "ab.d1": "Une recherche menée en français, italien, anglais et espagnol, pour que les utilisateurs s’expriment avec leurs propres mots, sur chaque marché.",
-    "ab.d2": "Les outils métier complexes : outils d’agents publics, back-offices, écosystèmes multi-acteurs. J’ai utilisé Amadeus au quotidien : je connais la charge cognitive des experts de l’intérieur.",
+    "ab.d2": "Les outils métier complexes : outils d’agents publics, back-offices, écosystèmes multi-acteurs. J’ai utilisé Amadeus au quotidien et j’ai déjà fait l’expérience de la charge cognitive à laquelle les experts sont parfois confrontés.",
     "ab.d3": "L’accessibilité intégrée : formations WCAG et RGAA à la DINUM.",
     "ab.japan": "En dehors du travail, une passion pour le Japon, où je retrouve ce que j’aime dans l’UX : le soin du détail et l’art de la simplicité.",
     "co.eyebrow": "Travailler ensemble",
