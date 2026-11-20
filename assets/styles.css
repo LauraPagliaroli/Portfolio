@@ -19,6 +19,7 @@
   --navy: #02234E;         /* primary: headings, primary buttons, band */
   --coral: #FF5E4D;        /* secondary: bright coral (fills, highlights) */
   --coral-ink: #B32F1F;    /* coral for TEXT on light backgrounds (AA) */
+  --coral-display: #F5533F; /* bright coral for large heading words (3:1 AA large text) */
   --on-coral: #02234E;     /* text placed on coral fills */
   --btn-bg: #02234E;       /* primary button */
   --btn-fg: #F7F4EE;
@@ -57,7 +58,7 @@
   :root:not([data-theme="light"]) {
     --washi: #071A33; --paper: #0C2444; --sand: #0A2040; --line: #284770;
     --ink: #E9EDF3; --muted: #AAB6C8; --navy: #C9DAF5;
-    --coral: #FF6B5B; --coral-ink: #FF8E80; --on-coral: #02234E;
+    --coral: #FF6B5B; --coral-ink: #FF8E80; --coral-display: #FF6B5B; --on-coral: #02234E;
     --btn-bg: #F7F4EE; --btn-fg: #02234E;
     --band-bg: #0F2D55; --band-fg: #F7F4EE;
     --wave: #C9DAF5; --focus: #FF8E80; --placeholder-bg: #3A1F2A;
@@ -68,7 +69,7 @@
 :root[data-theme="dark"] {
   --washi: #071A33; --paper: #0C2444; --sand: #0A2040; --line: #284770;
   --ink: #E9EDF3; --muted: #AAB6C8; --navy: #C9DAF5;
-  --coral: #FF6B5B; --coral-ink: #FF8E80; --on-coral: #02234E;
+  --coral: #FF6B5B; --coral-ink: #FF8E80; --coral-display: #FF6B5B; --on-coral: #02234E;
   --btn-bg: #F7F4EE; --btn-fg: #02234E;
   --band-bg: #0F2D55; --band-fg: #F7F4EE;
   --wave: #C9DAF5; --focus: #FF8E80; --placeholder-bg: #3A1F2A;
@@ -226,7 +227,8 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
    ========================================================================== */
 .hero { position: relative; overflow: hidden; }
 .hero__inner { position: relative; display: grid; gap: 1.75rem; padding-block: clamp(3rem, 8vw, 6rem) clamp(2.5rem, 6vw, 4.5rem); }
-.hero h1 { max-width: 15ch; }
+.hero h1 { max-width: 22ch; }
+.accent { color: var(--coral-display); } /* highlighted words, as in the LinkedIn banner */
 .hero__lead { font-size: var(--fs-lead); font-weight: 500; color: var(--ink); max-width: 58ch; }
 .hero__name { font-weight: 700; color: var(--navy); }
 .availability {
