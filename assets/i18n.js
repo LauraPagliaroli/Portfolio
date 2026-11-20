@@ -19,7 +19,7 @@ window.I18N = {
     "proof.1": "ans d’expérience en environnement international et grands comptes",
     "proof.2": "langues de recherche : FR · IT · EN · ES",
     "proof.3": "sessions de recherche menées chez Picard : tests, focus groups, ateliers",
-    "proof.4": "roadmap produit adoptée par un ministère après mon diagnostic",
+    "proof.4": "diagnostic de maturité design et IA pour la DNUM des ministères sociaux, et roadmap d’implémentation alimentée",
     "work.eyebrow": "Projets choisis · 5 études",
     "work.title": "Une recherche qui a changé le produit",
     "work.intro": "Chaque étude suit le même fil : le problème, ce que j’ai fait, et la décision qui en a découlé.",
