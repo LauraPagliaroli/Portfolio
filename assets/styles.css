@@ -566,3 +566,4 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 
 /* Figures stacked full width (large sketches stay legible) */
 .figure-stack { display: grid; gap: 1.75rem; }
+.metrics:has(> li:nth-child(4):last-child) { grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
