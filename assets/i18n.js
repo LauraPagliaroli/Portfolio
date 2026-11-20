@@ -26,7 +26,7 @@ window.I18N = {
     "tl.problem": "Problème",
     "tl.did": "Action",
     "tl.impact": "Impact",
-    "read": "Lire l’étude de cas →",
+    "read": "Lire l’étude de cas",
     "soon": "Étude de cas complète bientôt en ligne",
     "earlier.l": "Premiers projets UX/UI",
     "earlier.t": "issus de mon bootcamp Docaposte, sur Notion :",
