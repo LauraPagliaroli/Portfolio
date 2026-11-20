@@ -191,6 +191,13 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 .btn--primary { background: var(--btn-bg); color: var(--btn-fg); transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease; }
 .btn--primary:hover, .btn--primary:focus-visible { background: var(--coral); color: var(--on-coral); }
 .btn--coral { background: var(--coral); color: var(--on-coral); }
+/* Contact me: on hover an arrow slides in. No shadow, no colour change */
+.btn--coral::after {
+  content: "→"; display: inline-block; overflow: hidden; max-width: 0; margin-left: -0.5rem; opacity: 0;
+  transform: translateX(-6px); transition: max-width 0.25s ease, margin-left 0.25s ease, opacity 0.2s ease, transform 0.25s ease;
+}
+.btn--coral:hover, .btn--coral:focus-visible { transform: none; box-shadow: none; }
+.btn--coral:hover::after, .btn--coral:focus-visible::after { max-width: 1.2em; margin-left: 0; opacity: 1; transform: translateX(0); }
 .btn--ghost { background: transparent; color: var(--navy); border-color: var(--navy); }
 .btn--small { min-height: 2.5rem; padding: 0.5rem 0.9rem; font-size: 0.9375rem; }
 
