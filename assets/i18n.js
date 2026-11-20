@@ -89,7 +89,7 @@ window.I18N = {
     "m.6": "Proposition de valeur",
     "m.7": "Tests d’acceptation",
     "m.8": "Entretiens · n = 7",
-    "m.9": "Enquête · n = 120",
+    "m.9": "Enquête · n = 49",
     "m.10": "Social listening",
     "m.11": "Co-création",
     "m.12": "Story mapping",
