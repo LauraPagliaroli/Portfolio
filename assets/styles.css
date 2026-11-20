@@ -188,7 +188,8 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
   border: 2px solid transparent; transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .btn:hover { transform: translateY(-1px); box-shadow: 0 4px 0 -1px color-mix(in srgb, var(--navy) 25%, transparent); }
-.btn--primary { background: var(--btn-bg); color: var(--btn-fg); }
+.btn--primary { background: var(--btn-bg); color: var(--btn-fg); transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease; }
+.btn--primary:hover, .btn--primary:focus-visible { background: var(--coral); color: var(--on-coral); }
 .btn--coral { background: var(--coral); color: var(--on-coral); }
 .btn--ghost { background: transparent; color: var(--navy); border-color: var(--navy); }
 .btn--small { min-height: 2.5rem; padding: 0.5rem 0.9rem; font-size: 0.9375rem; }
