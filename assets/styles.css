@@ -30,9 +30,8 @@
 
   /* ---- Typography ---- */
   --font-name: "Caveat", "Segoe Print", "Bradley Hand", cursive;           /* your name */
-  --font-display: "Nico Moji", "M PLUS Rounded 1c", "Rounded Mplus 1c", "IBM Plex Sans", sans-serif; /* h1/h2, with restraint */
-  --font-display-accented: "M PLUS Rounded 1c", "Rounded Mplus 1c", "IBM Plex Sans", sans-serif;      /* FR/IT: Nico Moji has no accents */
-  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Sora", "Segoe UI", system-ui, sans-serif;  /* headings */
+  --font-body: "Sora", "Segoe UI", system-ui, sans-serif;     /* running text */
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
   /* ---- Type scale (body = 18px) ---- */
@@ -96,11 +95,10 @@ p { margin: 0; max-width: var(--measure); }
 ul { margin: 0; }
 
 h1, h2, h3 { margin: 0; color: var(--navy); text-wrap: balance; }
-h1, h2 { font-family: var(--font-display); font-weight: 400; line-height: 1.15; letter-spacing: 0.005em; }
+h1, h2 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; letter-spacing: 0.005em; }
 h1 { font-size: var(--fs-h1); }
 h2 { font-size: var(--fs-h2); }
 h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; line-height: 1.3; }
-:lang(fr) h1, :lang(fr) h2, :lang(it) h1, :lang(it) h2 { font-family: var(--font-display-accented); font-weight: 800; }
 
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
 

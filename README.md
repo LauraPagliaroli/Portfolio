@@ -48,8 +48,7 @@ Pour la publier :
 
 Ouvre `assets/styles.css` : le bloc `:root` en haut définit `--washi` (fond), `--navy` (couleur primaire),
 `--coral` (secondaire), etc. Le mode sombre est redéfini juste en dessous.
-Note : la police Nico Moji n'a pas de lettres accentuées ; en FR et IT, les titres passent
-automatiquement sur M PLUS Rounded 1c.
+Typos : Sora pour les titres et le texte, Caveat pour le nom, IBM Plex Mono pour les étiquettes.
 
 ## Mise en ligne sur GitHub Pages
 
