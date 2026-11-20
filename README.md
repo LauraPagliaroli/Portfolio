@@ -11,7 +11,7 @@ case-studies/                       Chaque étude existe en anglais (slug.html) 
   signalconso-dgccrf.html             SignalConso (contenu repris de Notion)
   savoirsphere-teacher-app.html       SavoirSphère (Notion)
   guide-master-travel-app.html        Guide Master (Notion)
-  dnum-product-studio.html            DNUM : BROUILLON CACHÉ (voir plus bas)
+  designops-ministeres-sociaux.html   DesignOps, Ministères Sociaux (DNUM)
 assets/
   styles.css      Toutes les couleurs et typos sont des variables en haut du fichier (:root)
   i18n.js         Traduction FR de l'accueil (l'anglais est dans le HTML)
@@ -32,17 +32,6 @@ robots.txt, sitemap.xml, .nojekyll
    Exporte-les depuis Notion (clic droit > Télécharger), convertis-les en WebP, place-les dans `assets/`
    avec le nom indiqué dans chaque emplacement, puis remplace le SVG d'attente par la balise `<img>` fournie
    en commentaire juste au-dessus.
-
-## Publier l'étude DNUM (actuellement cachée)
-
-La page existe mais elle n'est ni liée depuis l'accueil, ni indexée par Google, ni dans le sitemap.
-Pour la publier :
-1. Dans `case-studies/dnum-product-studio.html` : supprimer la ligne `<meta name="robots" content="noindex, nofollow">`
-   et le bandeau « Hidden draft », ajouter une balise canonical comme sur les autres pages.
-2. Dans `index.html` : retirer le commentaire `<!-- HIDDEN DRAFT · DNUM … -->` qui entoure la carte,
-   remplacer `label–coral` par `label--coral`, et entourer le titre d'un lien vers la page.
-   La carte doit rester en premier (projet le plus récent).
-3. Ajouter l'URL dans `sitemap.xml`.
 
 ## Modifier les couleurs ou les typos
 
