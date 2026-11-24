@@ -46,7 +46,7 @@ window.I18N = {
     "c3.date": "2026 – aujourd’hui",
     "c3.title": "Ministères Sociaux : transformer les irritants d’un studio design en plan d’action 2027",
     "c3.p": "Des expertises intégrées trop tard, des modes de travail non partagés et peu de mesure d’impact dans le studio design des Ministères Sociaux.",
-    "c3.d": "Entretiens avec 17 personnes, 5 grands enseignements, puis un atelier de co-création : brainstorming, vote et priorisation effort / impact.",
+    "c3.d": "Entretiens avec 17 personnes, 4 grands enseignements, puis un atelier de co-création : brainstorming, vote et priorisation effort / impact.",
     "c3.i": "Des recommandations actionnables et priorisées qui nourrissent le programme 2027 du studio.",
     "c4.sector": "Santé · Projet entrepreneurial",
     "c4.title": "Linout : une file d’attente virtuelle pour les médecins, du problème terrain au concept testé",
