@@ -16,6 +16,7 @@ window.I18N = {
     "hero.availability": "Ouverte aux postes UX Research &amp; Product Discovery et aux missions freelance · Paris, hybride ou full remote",
     "cta.cv": "Voir mon CV",
     "cta.contact": "Me contacter",
+    "cta.work": "Voir mon travail",
     "proof.1": "ans d’expérience en environnement international et grands comptes",
     "proof.2": "langues de recherche : FR · IT · EN · ES",
     "proof.3": "sessions de recherche menées chez Picard : tests, focus groups, ateliers",
