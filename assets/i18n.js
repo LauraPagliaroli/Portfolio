@@ -84,7 +84,7 @@ window.I18N = {
     "q3.text": "Si vous recherchez quelqu’un de professionnel, fiable et compétent, je vous recommande vivement Laura. C’est une UX researcher talentueuse avec qui j’ai eu grand plaisir de partager une année aux Gobelins. Elle est à l’écoute tant des utilisateurs que de ses collaborateurs, et met à profit sa polyvalence pour mener les projets auxquels elle participe vers la réussite.",
     "q3.role": "Product Manager, SaaS B2B, promotion Gobelins",
     "q4.text": "Laura est une experte en recherche utilisateur dévouée et très professionnelle !",
-    "q4.role": "Product Designer, a travaillé avec Laura dans une autre équipe",
+    "q4.role": "Product Designer, DNUM, Ministères Sociaux, a travaillé avec Laura dans une autre équipe",
     "q.src": "Recommandation LinkedIn",
     "m.1": "Tests utilisateurs",
     "m.2": "Focus groups",
