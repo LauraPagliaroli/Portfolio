@@ -14,7 +14,7 @@ window.I18N = {
     "hero.title": "Comprendre <span class=\"accent\">vos</span> utilisateurs<br class=\"line-break\"> dans leur <span class=\"accent\">propre</span> langue",
     "hero.lead": "UX Researcher avec une approche produit, je mène la recherche de bout en bout, du cadrage de la question à la décision sur la roadmap, pour les grandes organisations et les services publics. En français, italien, anglais et espagnol.",
     "hero.availability": "Ouverte aux postes UX Research &amp; Product Discovery et aux missions freelance · Paris, hybride ou full remote",
-    "cta.cv": "Voir mon CV",
+    "cta.cv": "Télécharger mon CV",
     "cta.contact": "Me contacter",
     "cta.work": "Voir mon travail",
     "proof.1": "ans d’expérience en environnement international et grands comptes",
