@@ -599,3 +599,4 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 .cs-section ul.metrics, .cs-section ul.verbatims, .cs-section ol.insights, .cs-section ul.protocol { padding-left: 0; max-width: none; }
 .cs-panel .protocol { grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); }
 .metrics li { align-content: start; }
+.protocol span { overflow-wrap: anywhere; hyphens: auto; }
