@@ -186,31 +186,32 @@
     <section class="cs-section cs-panel" id="synthesis" aria-labelledby="synthesis-title">
       <p class="cs-kicker"><span aria-hidden="true">03</span> Data</p>
       <h2 id="synthesis-title">Synthesis</h2>
-      <p>I grouped observations from every session by theme, then mapped the shopping and loyalty journeys to locate where customers dropped off or hesitated.</p>
+      <p>I coded every session, grouped observations by theme, then mapped the shopping journey to locate where customers dropped off or hesitated.</p>
 
+      <h3>Coding the test sessions</h3>
+      <p>I coded every usability session in a grid: one column per tester, one row per step of the journey, each note marked positive, negative or blocking, with verbatims in blue.</p>
       <figure class="figure">
-          <div class="figure__frame">
-            <svg viewBox="0 0 400 260" role="img" aria-labelledby="fig2-t">
-              <title id="fig2-t">Placeholder: loyalty journey with five steps and a satisfaction curve that drops at step three</title>
-              <rect width="400" height="260" fill="var(--paper)"/>
-              <line x1="30" y1="130" x2="370" y2="130" stroke="var(--line)" stroke-dasharray="4 4"/>
-              <polyline points="40,100 115,90 190,185 265,150 340,80" fill="none" stroke="var(--navy)" stroke-width="3" stroke-linejoin="round"/>
-              <g fill="var(--navy)"><circle cx="40" cy="100" r="5"/><circle cx="115" cy="90" r="5"/><circle cx="265" cy="150" r="5"/><circle cx="340" cy="80" r="5"/></g>
-              <circle cx="190" cy="185" r="8" fill="var(--coral)"/>
-              <g font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)" text-anchor="middle">
-                <text x="40" y="215">Discover</text><text x="115" y="215">Sign up</text><text x="190" y="215">Earn</text><text x="265" y="215">Redeem</text><text x="340" y="215">Return</text>
-              </g>
-              <text x="24" y="246" font-family="Sora, sans-serif" font-size="13" fill="var(--muted)">[À REMPLACER] real journey map</text>
-            </svg>
-          </div>
-          <figcaption>Loyalty journey: the biggest drop in confidence. <span class="todo">replace steps and pain point with the real map</span></figcaption>
-        </figure>
+        <div class="figure__frame"><img src="../assets/picard-coding-grid.webp" width="1600" height="1496" loading="lazy" decoding="async" alt="Coding grid of the usability tests: 14 tester columns and 20 journey rows, from home page and search to loyalty and additional notes. Each cell holds notes marked with a green plus, a yellow minus or a red cross, and verbatims in blue."></div>
+        <figcaption>Coding grid of the usability tests: 14 testers, 20 steps, positive, negative and blocking notes. <a href="../assets/picard-coding-grid-full.webp">Open the full-size grid</a>.</figcaption>
+      </figure>
 
+      <h3>Shopping journey map</h3>
+      <p>From the coding, I built the journey map: the balance of positive and negative notes at each stage shows where customers hesitate, and checkout is the lowest point.</p>
+      <figure class="figure">
+        <div class="jmap" role="img" aria-label="Shopping journey of 14 testers on the website, in 8 stages. For each stage: positive and negative notes from the coding, the main pain point and the opportunity. Search: 14 positive, 7 negative; Browse aisles: 15 positive, 15 negative; Product page: 9 positive, 4 negative; Delivery and collection: 26 positive, 18 negative; Basket: 11 positive, 7 negative; Checkout and payment: 7 positive, 23 negative; Loyalty: 9 positive, 6 negative; Confirmation: 3 positive, 5 negative. The lowest point is checkout and payment.">
+          <svg class="jmap__curve" viewBox="0 0 800 150" aria-hidden="true" focusable="false"><line x1="0" y1="75.0" x2="800" y2="75.0" stroke="var(--line)" stroke-dasharray="5 5"/><polyline points="50,57 150,75 250,54 350,65 450,63 550,104 650,64 750,89" fill="none" stroke="var(--navy)" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/><circle cx="50" cy="57" r="6" fill="var(--navy)"/><circle cx="150" cy="75" r="6" fill="var(--navy)"/><circle cx="250" cy="54" r="6" fill="var(--navy)"/><circle cx="350" cy="65" r="6" fill="var(--navy)"/><circle cx="450" cy="63" r="6" fill="var(--navy)"/><circle cx="550" cy="104" r="9" fill="var(--coral)"/><circle cx="650" cy="64" r="6" fill="var(--navy)"/><circle cx="750" cy="89" r="6" fill="var(--navy)"/></svg>
+          <ol class="jmap__stages"><li class="jmap__stage"><span class="jmap__num" aria-hidden="true">1</span><h4>Search</h4><p class="jmap__counts"><span class="jmap__pos">+14</span> <span class="jmap__neg">−7</span></p></li><li class="jmap__stage"><span class="jmap__num" aria-hidden="true">2</span><h4>Browse aisles</h4><p class="jmap__counts"><span class="jmap__pos">+15</span> <span class="jmap__neg">−15</span></p></li><li class="jmap__stage"><span class="jmap__num" aria-hidden="true">3</span><h4>Product page</h4><p class="jmap__counts"><span class="jmap__pos">+9</span> <span class="jmap__neg">−4</span></p></li><li class="jmap__stage"><span class="jmap__num" aria-hidden="true">4</span><h4>Delivery &amp; collection</h4><p class="jmap__counts"><span class="jmap__pos">+26</span> <span class="jmap__neg">−18</span></p></li><li class="jmap__stage"><span class="jmap__num" aria-hidden="true">5</span><h4>Basket</h4><p class="jmap__counts"><span class="jmap__pos">+11</span> <span class="jmap__neg">−7</span></p></li><li class="jmap__stage jmap__stage--low"><span class="jmap__num" aria-hidden="true">6</span><h4>Checkout &amp; payment</h4><p class="jmap__counts"><span class="jmap__pos">+7</span> <span class="jmap__neg">−23</span></p></li><li class="jmap__stage"><span class="jmap__num" aria-hidden="true">7</span><h4>Loyalty</h4><p class="jmap__counts"><span class="jmap__pos">+9</span> <span class="jmap__neg">−6</span></p></li><li class="jmap__stage"><span class="jmap__num" aria-hidden="true">8</span><h4>Confirmation</h4><p class="jmap__counts"><span class="jmap__pos">+3</span> <span class="jmap__neg">−5</span></p></li></ol>
+          <ol class="jmap__details"><li class="jmap__detail"><h4><span class="jmap__num" aria-hidden="true">1</span> Search</h4><p class="jmap__pain">No tolerance for typos and no suggestions: a product such as Mix &amp; Miam could not be found by typing.</p><p class="jmap__opp">Spelling tolerance and search suggestions</p></li><li class="jmap__detail"><h4><span class="jmap__num" aria-hidden="true">2</span> Browse aisles</h4><p class="jmap__pain">No ratings on product tiles, repeated products, back to the top of the list after each add; split between pages and infinite scroll.</p><p class="jmap__opp">Ratings on tiles, keep the scroll position</p></li><li class="jmap__detail"><h4><span class="jmap__num" aria-hidden="true">3</span> Product page</h4><p class="jmap__pain">Well liked (ratings, Nutri-Score, preparation), but detailed information in the accordion felt cluttered.</p><p class="jmap__opp">Clearer hierarchy of detailed information</p></li><li class="jmap__detail"><h4><span class="jmap__num" aria-hidden="true">4</span> Delivery &amp; collection</h4><p class="jmap__pain">Hard to switch between home delivery and click &amp; collect; products become unavailable after switching; preferred store not offered.</p><p class="jmap__opp">Clear service switch, availability shown earlier</p></li><li class="jmap__detail"><h4><span class="jmap__num" aria-hidden="true">5</span> Basket</h4><p class="jmap__pain">Mini basket and basket page felt like duplicates; unavailable products appeared late.</p><p class="jmap__opp">Merge mini basket and basket</p></li><li class="jmap__detail jmap__detail--low"><h4><span class="jmap__num" aria-hidden="true">6</span> Checkout &amp; payment</h4><p class="jmap__pain">Promo code hard to find (12 testers), steps not clickable to go back, 3-D Secure not always requested.</p><p class="jmap__opp">Visible promo code field, clickable steps</p></li><li class="jmap__detail"><h4><span class="jmap__num" aria-hidden="true">7</span> Loyalty</h4><p class="jmap__pain">Points rules misunderstood (1 euro = 1 point), expiry unclear, rewards not targeted, challenges too long.</p><p class="jmap__opp">Explain how points work and when they expire</p></li><li class="jmap__detail"><h4><span class="jmap__num" aria-hidden="true">8</span> Confirmation</h4><p class="jmap__pain">Little reassurance after ordering.</p><p class="jmap__opp">Clear recap and next steps</p></li></ol>
+          <p class="jmap__legend"><span class="jmap__pos">+ positive notes</span> <span class="jmap__neg">− negative notes</span> <span class="jmap__legend-pain">Pain point</span> <span class="jmap__legend-opp">Opportunity</span></p>
+        </div>
+        <figcaption>Shopping journey on the website, built from the coding of 14 test sessions. The curve shows the balance of positive and negative notes at each stage.</figcaption>
+      </figure>
       <h3>What customers said</h3>
       <ul class="verbatims">
-        <li><q><span class="todo">Anonymised verbatim about product labels</span></q><span>Participant 07 · app user</span></li>
-        <li><q><span class="todo">Anonymised verbatim about the loyalty programme</span></q><span>Focus group 2 · loyalty member</span></li>
-        <li><q><span class="todo">Anonymised verbatim about choosing a product</span></q><span>Participant 15 · web user</span></li>
+        <li><q>It's cluttered: the information isn't well organised, and there are different fonts.</q><span>Tester 7 · about the detailed product information</span></li>
+        <li><q>It would be better to offer a discount on the products I like rather than impose products on me.</q><span>Tester 10 · about loyalty rewards</span></li>
+        <li><q>A bit like in Picard stores: when you walk in there are always the first freezers. It's the same route as in the store, and I reproduce it.</q><span>Tester 4 · about how she browses the aisles</span></li>
+        <li><q>That's for sure, it's not visible enough!</q><span>Tester 7 · about the promo code field</span></li>
       </ul>
     </section>
 
