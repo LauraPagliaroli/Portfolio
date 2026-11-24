@@ -357,14 +357,15 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 @media (max-width: 760px) { .quotes { grid-template-columns: 1fr; } }
 /* Auto layout: cards side by side share the same two row tracks (quote / signature),
    so every signature band has the same height, whatever the text length or language. */
-@supports (grid-template-rows: subgrid) {
-  .quotes { row-gap: 0; }
-  .quote { grid-row: span 2; grid-template-rows: subgrid; }
-  @media (max-width: 760px) { .quote + .quote { margin-top: 1.5rem; } }
-}
 .quote {
   margin: 0; display: grid; grid-template-rows: 1fr auto; overflow: hidden;
   background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+}
+@supports (grid-template-rows: subgrid) {
+  .quotes { row-gap: 0; }
+  .quote { grid-row: span 2; grid-template-rows: subgrid; }
+  .quote:nth-child(n+3) { margin-top: 1.5rem; }
+  @media (max-width: 760px) { .quote + .quote { margin-top: 1.5rem; } }
 }
 .quote blockquote { margin: 0; padding: 1.75rem 1.75rem 1.5rem; font-size: var(--fs-lead); line-height: 1.5; color: var(--ink); }
 /* Signature band: navy with a discreet Seigaiha pattern (same navy in both themes) */
