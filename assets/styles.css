@@ -600,3 +600,13 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 .cs-panel .protocol { grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); }
 .metrics li { align-content: start; }
 .protocol span { overflow-wrap: anywhere; hyphens: auto; }
+/* CV buttons: a download icon slides in on hover (replaces the arrow) */
+.btn.btn--download::after {
+  content: ""; display: inline-block; flex: none; width: 1.1em; height: 1.1em; max-width: 0; margin-left: -0.5rem; opacity: 0;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4v11'/%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3Cpath d='M5 20h14'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 4v11'/%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3Cpath d='M5 20h14'/%3E%3C/svg%3E") center / contain no-repeat;
+  transform: translateY(-4px); transition: max-width 0.25s ease, margin-left 0.25s ease, opacity 0.2s ease, transform 0.25s ease;
+}
+.btn.btn--download:hover::after, .btn.btn--download:focus-visible::after { max-width: 1.1em; margin-left: 0; opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .btn.btn--download::after { transition: none; } }
