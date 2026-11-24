@@ -23,7 +23,7 @@ window.I18N = {
     "proof.4n": "5 ateliers",
     "proof.4": "chez Picard, à la DNUM et à la DGCCRF pour accompagner le changement et éclairer les décisions",
     "work.eyebrow": "Projets choisis · 6 études",
-    "work.title": "Une recherche qui a changé le produit",
+    "work.title": "Études de cas",
     "work.intro": "Chaque étude suit le même fil : le problème, ce que j’ai fait, et la décision qui en a découlé.",
     "tl.problem": "Problème",
     "tl.did": "Action",
