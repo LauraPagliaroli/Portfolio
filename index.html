@@ -50,6 +50,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Sora:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script>
+/* Preview only (framed): after a new version reloads the entry page, go back to the page the reader was on. */
+(function () {
+  try {
+    if (window.self === window.top) return;
+    var ref = document.referrer, sameSite = false;
+    try { sameSite = ref && new URL(ref).origin === location.origin; } catch (e) {}
+    if (sameSite) return; // the reader navigated here on purpose
+    var v = JSON.parse(sessionStorage.getItem("lp-last-view") || "null");
+    if (!v || Date.now() - v.t > 3600000) return;
+    var here = location.pathname.replace(/index\.html$/, "");
+    sessionStorage.setItem("lp-restore-y", String(v.y || 0));
+    if (v.path.replace(/index\.html$/, "") !== here) location.replace(v.path + (v.hash || ""));
+  } catch (e) {}
+})();
+</script>
 <script>/* every page opens in light mode */document.documentElement.setAttribute("data-theme","light")</script>
 <link rel="stylesheet" href="assets/styles.css">
 </head>

@@ -153,4 +153,28 @@
   /* ---------- Footer year ---------- */
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
+
+  /* ---------- Preview only: remember the page and scroll position ----------
+     When the site is shown inside a frame (the Claude artifact preview), a new version reloads the
+     entry page. We remember where the reader was so index.html can send them back. Not active on
+     GitHub Pages, where the site is never framed. */
+  try {
+    if (window.self !== window.top) {
+      var KEY = "lp-last-view";
+      var save = function () {
+        sessionStorage.setItem(KEY, JSON.stringify({ path: location.pathname, hash: location.hash, y: Math.round(window.scrollY), t: Date.now() }));
+      };
+      var pending = null;
+      window.addEventListener("scroll", function () { if (!pending) pending = setTimeout(function () { pending = null; save(); }, 250); }, { passive: true });
+      window.addEventListener("pagehide", save);
+      save();
+      var restoreY = sessionStorage.getItem("lp-restore-y");
+      if (restoreY !== null) {
+        sessionStorage.removeItem("lp-restore-y");
+        var y = parseInt(restoreY, 10) || 0;
+        window.addEventListener("load", function () { window.scrollTo(0, y); });
+        setTimeout(function () { window.scrollTo(0, y); }, 50);
+      }
+    }
+  } catch (e) { /* storage unavailable: nothing to restore */ }
 })();
