@@ -179,4 +179,31 @@
       }
     }
   } catch (e) { /* storage unavailable: nothing to restore */ }
+
+  /* ---------- CV download inside the Claude artifact viewer ----------
+     The viewer blocks plain download links, so there we hand the PDF over through the
+     platform's downloads capability. Elsewhere (GitHub Pages) the normal link is used. */
+  try {
+    if (window.claude && typeof window.claude.use === "function") {
+      window.claude.use("downloads").then(function (dl) {
+        if (!dl) return;
+        var links = document.querySelectorAll('a[download][href$=".pdf"]');
+        if (!links.length) return;
+        var href = links[0].getAttribute("href");
+        var cached = fetch(href).then(function (r) { return r.ok ? r.blob() : null; }).catch(function () { return null; });
+        links.forEach(function (a) {
+          a.addEventListener("click", function (e) {
+            e.preventDefault();
+            cached.then(function (blob) {
+              if (!blob) { window.open(a.href, "_blank", "noopener"); return; }
+              return dl.save({ filename: a.getAttribute("download") || "CV.pdf", data: blob });
+            }).catch(function (err) {
+              var code = err && err.code;
+              if (code !== "declined" && code !== "rate_limited") window.open(a.href, "_blank", "noopener");
+            });
+          });
+        });
+      });
+    }
+  } catch (e) { /* plain link stays */ }
 })();
