@@ -162,7 +162,9 @@
     if (window.self !== window.top) {
       var KEY = "lp-last-view";
       var save = function () {
-        sessionStorage.setItem(KEY, JSON.stringify({ path: location.pathname, hash: location.hash, y: Math.round(window.scrollY), t: Date.now() }));
+        var m = location.pathname.match(/case-studies\/[^\/]+\.html$/);
+        // Store the page relative to the site root: the preview serves each version under its own path.
+        sessionStorage.setItem(KEY, JSON.stringify({ page: m ? m[0] : "", hash: location.hash, y: Math.round(window.scrollY), t: Date.now() }));
       };
       var pending = null;
       window.addEventListener("scroll", function () { if (!pending) pending = setTimeout(function () { pending = null; save(); }, 250); }, { passive: true });

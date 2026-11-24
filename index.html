@@ -60,9 +60,8 @@
     if (sameSite) return; // the reader navigated here on purpose
     var v = JSON.parse(sessionStorage.getItem("lp-last-view") || "null");
     if (!v || Date.now() - v.t > 3600000) return;
-    var here = location.pathname.replace(/index\.html$/, "");
     sessionStorage.setItem("lp-restore-y", String(v.y || 0));
-    if (v.path.replace(/index\.html$/, "") !== here) location.replace(v.path + (v.hash || ""));
+    if (v.page) location.replace(v.page + (v.hash || "")); // relative: stays in the current version
   } catch (e) {}
 })();
 </script>
