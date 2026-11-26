@@ -40,6 +40,12 @@
     document.querySelectorAll(".lang-switch button").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
     });
+    // CV follows the language
+    document.querySelectorAll('a[href*="Laura_Pagliaroli_CV_UX_Researcher_"]').forEach(function (a) {
+      var f = lang === "fr" ? "Laura_Pagliaroli_CV_UX_Researcher_FR.pdf" : "Laura_Pagliaroli_CV_UX_Researcher_EN.pdf";
+      a.setAttribute("href", a.getAttribute("href").replace(/Laura_Pagliaroli_CV_UX_Researcher_(EN|FR)\.pdf/, f));
+      if (a.hasAttribute("download")) a.setAttribute("download", f);
+    });
     // case study links follow the language: slug.html <-> slug-fr.html
     document.querySelectorAll('a[href^="case-studies/"]').forEach(function (a) {
       var href = a.getAttribute("href").replace(/-fr\.html$/, ".html");
@@ -189,12 +195,10 @@
         if (!dl) return;
         var links = document.querySelectorAll('a[download][href$=".pdf"]');
         if (!links.length) return;
-        var href = links[0].getAttribute("href");
-        var cached = fetch(href).then(function (r) { return r.ok ? r.blob() : null; }).catch(function () { return null; });
         links.forEach(function (a) {
           a.addEventListener("click", function (e) {
             e.preventDefault();
-            cached.then(function (blob) {
+            fetch(a.getAttribute("href")).then(function (r) { return r.ok ? r.blob() : null; }).catch(function () { return null; }).then(function (blob) {
               if (!blob) { window.open(a.href, "_blank", "noopener"); return; }
               return dl.save({ filename: a.getAttribute("download") || "CV.pdf", data: blob });
             }).catch(function (err) {
