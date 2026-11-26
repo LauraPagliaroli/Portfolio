@@ -671,3 +671,14 @@ details.more > .method-table-wrap { margin: 0; border: 0; border-top: 1px solid 
 .case-card__metric strong { font-weight: 800; font-size: 1.75rem; line-height: 1; color: var(--coral-ink, #B32F1F); letter-spacing: -0.01em; }
 .tldr-box li span { font-weight: 300; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 :root[data-theme="dark"] .tldr-box li span { font-weight: 400; }
+/* Copy email: a copy icon slides in on hover, like the other CTAs */
+.btn.btn--copy::after {
+  content: ""; display: inline-block; flex: none; width: 1.05em; height: 1.05em; max-width: 0; margin-left: -0.5rem; opacity: 0;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='11' height='11' rx='2'/%3E%3Cpath d='M5 15V6a2 2 0 0 1 2-2h9'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='11' height='11' rx='2'/%3E%3Cpath d='M5 15V6a2 2 0 0 1 2-2h9'/%3E%3C/svg%3E") center / contain no-repeat;
+  transform: translateX(-6px); transition: max-width 0.25s ease, margin-left 0.25s ease, opacity 0.2s ease, transform 0.25s ease;
+}
+.btn.btn--copy:hover, .btn.btn--copy:focus-visible { transform: none; box-shadow: none; }
+.btn.btn--copy:hover::after, .btn.btn--copy:focus-visible::after { max-width: 1.05em; margin-left: 0; opacity: 1; transform: translateX(0); }
+@media (prefers-reduced-motion: reduce) { .btn.btn--copy::after { transition: none; } }
