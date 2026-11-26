@@ -634,3 +634,38 @@ h3 { font-family: var(--font-body); font-size: var(--fs-h3); font-weight: 600; l
 :lang(fr) .jmap__pain::before { content: "Irritant"; } :lang(fr) .jmap__opp::before { content: "Opportunité"; }
 .jmap__legend { margin: 0; display: flex; flex-wrap: wrap; gap: 1rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
 .jmap__legend-pain, .jmap__legend-opp { display: none; }
+
+/* ==========================================================================
+   Case-study highlights: hero visual + headline metrics, read in 10 seconds
+   ========================================================================== */
+.cs-highlight { padding: clamp(1.5rem, 3vw, 2.5rem) 0 clamp(1rem, 2vw, 1.5rem); }
+.cs-highlight__inner { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: clamp(1.25rem, 3vw, 2.5rem); align-items: center; }
+@media (max-width: 900px) { .cs-highlight__inner { grid-template-columns: 1fr; } }
+.cs-highlight__media { margin: 0; min-width: 0; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: var(--sand); }
+.cs-highlight__media img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.cs-highlight__facts { display: flex; flex-direction: column; gap: 1.25rem; }
+.cs-highlight__time { margin: 0; font-family: var(--font-mono); font-size: var(--fs-label); text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.cs-highlight__metrics { display: grid; gap: 0; margin: 0; border-top: 1px solid var(--line); }
+.cs-highlight__metrics div { display: grid; grid-template-columns: minmax(6.5rem, auto) 1fr; gap: 1rem; align-items: baseline; padding: 0.85rem 0; border-bottom: 1px solid var(--line); }
+.cs-highlight__metrics dt { font-weight: 800; font-size: clamp(1.75rem, 3.2vw, 2.4rem); line-height: 1; color: var(--navy); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.cs-highlight__metrics dd { margin: 0; font-size: var(--fs-small); line-height: 1.45; color: var(--ink); }
+:root[data-theme="dark"] .cs-highlight__metrics dt { color: var(--coral-display, #F5533F); }
+.cs-highlight__shows { background: var(--navy); color: #F7F4EE; border-radius: var(--radius); padding: 1.1rem 1.25rem; }
+:root[data-theme="dark"] .cs-highlight__shows { background: var(--paper); color: var(--ink); border: 1px solid var(--line); }
+.cs-highlight__shows h2 { margin: 0 0 0.6rem; font-family: var(--font-mono); font-size: var(--fs-label); font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: #FF8E80; }
+.cs-highlight__shows ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.5rem; }
+.cs-highlight__shows li { position: relative; padding-left: 1.5rem; font-size: var(--fs-small); line-height: 1.45; }
+.cs-highlight__shows li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #FF8E80; font-weight: 700; }
+
+/* Long tables folded by default: detail on demand */
+details.more { margin: 1rem 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+details.more > summary { cursor: pointer; padding: 0.75rem 1rem; min-height: 2.75rem; display: flex; align-items: center; gap: 0.5rem; font-weight: 600; font-size: var(--fs-small); color: var(--navy); list-style: none; }
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before { content: "+"; display: inline-grid; place-items: center; width: 1.4rem; height: 1.4rem; border-radius: 50%; border: 1.5px solid currentColor; font-family: var(--font-mono); line-height: 1; transition: transform 0.2s ease; }
+details.more[open] > summary::before { content: "−"; }
+details.more > summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: var(--radius); }
+details.more > .method-table-wrap { margin: 0; border: 0; border-top: 1px solid var(--line); border-radius: 0 0 var(--radius) var(--radius); }
+:root[data-theme="dark"] details.more > summary { color: var(--ink); }
+@media (max-width: 640px) { .cs-hero .tags { display: none; } }
+.case-card__metric { margin: 0; display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0.75rem; font-size: var(--fs-small); line-height: 1.4; color: var(--muted); }
+.case-card__metric strong { font-weight: 800; font-size: 1.75rem; line-height: 1; color: var(--coral-ink, #B32F1F); letter-spacing: -0.01em; }
